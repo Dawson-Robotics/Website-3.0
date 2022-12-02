@@ -4,4 +4,5 @@ source "https://rubygems.org"
 
 # gem "rails"
 gem "webrick", "~> 1.7"
-gem 'github-pages', '~> 227'
+
+ruby "2.7.2"
