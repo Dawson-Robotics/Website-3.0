@@ -20,3 +20,10 @@ defaults:
 
 url: https://dawson-robotics.github.io
 baseurl: /Website-3.0
+
+languages: ["en", "fr"]
+exclude_from_localization: ["assets"]
+defaultLang: en
+languageNames:
+  en: English
+  fr: Français
