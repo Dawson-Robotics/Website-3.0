@@ -15,5 +15,6 @@ defaults:
       layout: "post"
   - scope:
       path: ""
+      type: "Website-3.0"
     values:
       layout: "default"
