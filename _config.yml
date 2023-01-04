@@ -19,4 +19,4 @@ defaults:
       layout: "default"
 
 url: "dawson-robotics.github.io"
-baseurl: Website-3.0
+baseurl: "Website-3.0"
