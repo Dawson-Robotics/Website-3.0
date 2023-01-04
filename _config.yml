@@ -5,15 +5,18 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "Website-3.0/authors"
+      type: "authors"
     values:
       layout: "author"
   - scope:
       path: ""
-      type: "Website-3.0/posts"
+      type: "posts"
     values:
       layout: "post"
   - scope:
       path: ""
     values:
       layout: "default"
+
+url: https://dawson-robotics.github.io
+baseurl: /Website-3.0
