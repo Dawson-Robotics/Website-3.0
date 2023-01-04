@@ -5,12 +5,12 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "authors"
+      type: "Website-3.0/authors"
     values:
       layout: "author"
   - scope:
       path: ""
-      type: "posts"
+      type: "Website-3.0/posts"
     values:
       layout: "post"
   - scope:
