@@ -1,12 +1,3 @@
 site:
   name: Dawson Robotics
   description: A website submission for the CRC competition.
-
-- name: Home
-  link: /Website-3.0
-- name: About
-  link: /Website-3.0/about-us/
-- name: Blog
-  link: /Website-3.0/blog.html
-- name: Staff
-  link: /Website-3.0/staff.html
