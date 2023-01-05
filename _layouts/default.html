@@ -10,5 +10,16 @@
     {% include navigation.html %}
     {{ content }}
     <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+    <footer>
+      <a class="active" href="#">{{ site.languageNames[site.lang] }}</a>
+      {% for lang in site.languageNames %}
+      {% if lang[0] == site.lang %} {% continue %} {% endif %}
+      {% if page.namespace %}
+      <a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a>
+      {% else %}
+      <a href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+      {% endif %}
+      {% endfor %}
+    </footer>
   </body>
 </html>
