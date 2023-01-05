@@ -1,7 +1,7 @@
 // language files
 
 var lang = navigator.language || navigator.userLanguage;
-if (lang.indexOf('de') == 0)
-  window.location = '/de/';
+if (lang.indexOf('fr') == 0)
+  window.location = '/fr/';
 else
   window.location = '/en/';
