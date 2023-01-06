@@ -1,7 +1,5 @@
 - name: Home
-  link: 
-  - /Website-3.0/
-  - /Website-3.0/en/
+  link: /Website-3.0
 - name: About
   link: /Website-3.0/about-us/
 - name: Blog
