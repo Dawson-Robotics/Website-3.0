@@ -2,9 +2,11 @@
   link: /Website-3.0/home
 - name: About
   link: /Website-3.0/about-us/
-- name: Blog
+- name: Robot
   link: /Website-3.0/blog.html
-- name: Staff
-  link: /Website-3.0/staff/
 - name: Journal
   link: /Website-3.0/journal/
+- name: Team
+  link: /Website-3.0/staff/
+- name: Media
+
