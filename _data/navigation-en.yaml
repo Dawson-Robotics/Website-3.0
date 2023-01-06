@@ -1,8 +1,10 @@
 - name: Home
-  link: /Website-3.0/en/
+  link: /Website-3.0/home
 - name: About
   link: /Website-3.0/about-us/
 - name: Blog
   link: /Website-3.0/blog.html
 - name: Staff
   link: /Website-3.0/staff/
+- name: Journal
+  link: /Website-3.0/journal/
