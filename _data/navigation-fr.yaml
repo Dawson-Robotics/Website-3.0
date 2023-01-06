@@ -1,5 +1,5 @@
 - name: Acceuil
-  link: /Website-3.0/acceuil/
+  link: /Website-3.0/fr/acceuil/
 - name: À propos
   link: /Website-3.0/fr/a-propos/
 - name: Blogue
@@ -7,4 +7,4 @@
 - name: Équipe
   link: /Website-3.0/fr/equipe/
 - name: Journal
-  link: /Website-3.0/un-journal/
+  link: /Website-3.0/fr/un-journal/
