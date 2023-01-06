@@ -1,8 +1,8 @@
 - name: Acceuil
   link: /Website-3.0/fr/
 - name: À propos
-  link: /Website-3.0/a-propos/
+  link: /Website-3.0/fr/a-propos/
 - name: Blogue
   link: /Website-3.0/blog.html
 - name: Équipe
-  link: /Website-3.0/staff.html
+  link: /Website-3.0/fr/staff.html
