@@ -7,7 +7,8 @@ Dawson Robotics team were already working hard on recruiting new members to our 
 
 Kickoff
 
-![L+noimage+getowned](Website-3.0/assets/images/IMG_8369.jpg "Trevoir")
+![L+no image+get owned](../assets/images/IMG_8369.jpg "Trevoir")
+
 
 And then, on November 7th, Kickoff finally happened. A small group of Dawson Robotics’ members, including both of our co-captains, ventured to École Curé-Antoine Labelle, where the game rules were finally revealed to all. The group was given the CRC Starter Kit and a Dimensions Guide, containing all the dimensions of each and every part of the field, including the game pieces. Now, it was up to the team’s ingenuity and creativity to create something functioning and wonderful.
 
