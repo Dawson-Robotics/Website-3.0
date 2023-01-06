@@ -2,9 +2,11 @@
   link: /Website-3.0/fr/acceuil/
 - name: À propos
   link: /Website-3.0/fr/a-propos/
-- name: Blogue
+- name: Le robot
   link: /Website-3.0/blog.html
+- name: Le journal
+  link: /Website-3.0/fr/un-journal/
 - name: Équipe
   link: /Website-3.0/fr/equipe/
-- name: Journal
-  link: /Website-3.0/fr/un-journal/
+- name: Média
+
