@@ -1,6 +1,6 @@
 ---
-short_name: jill
-name: Jill Smith
-position: Chief Editor
+short_name: james
+name: James Di Sciullo
+position: Captain
 ---
-Jill is an avid fruit grower based in the south of France.
+{% tf jill.md %}

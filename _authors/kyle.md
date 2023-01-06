@@ -1,6 +1,6 @@
 ---
 short_name: kyle
 name: Kyle Lei
-position: Writer
+position: Website
 ---
-Kyle does not know what to do.
+{% tf kyle.md %}
