@@ -24,3 +24,24 @@ img{
     height: 100%;
     width: 100%;
 }
+
+a{
+    padding-top: 1em;
+    padding-left: 30px;
+}
+
+a:link{
+   color: #00fffbf;
+}
+
+a:visited{
+   color: #00ad82;
+}
+
+a:hover{
+   color: #c9cc21;
+}
+
+a:active{
+   color: #cc6521;
+}
