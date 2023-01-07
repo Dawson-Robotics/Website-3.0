@@ -32,3 +32,4 @@ repository: Dawson-Robotics/Website-3.0
 
 sass:
   style: compact # possible values: nested expanded compact compressed
+  sass_dir: _sass
