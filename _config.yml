@@ -29,3 +29,6 @@ languageNames:
   fr: Français
   
 repository: Dawson-Robotics/Website-3.0
+
+sass:
+  style: compact # possible values: nested expanded compact compressed
