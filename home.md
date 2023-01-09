@@ -6,4 +6,4 @@ permalink: /home/
 permalink_fr: /acceuil/
 ---
 
-{% tf home.html %}
+{% tf pages/home.html %}

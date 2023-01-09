@@ -7,4 +7,4 @@ permalink: /about-us/
 permalink_fr: /a-propos/
 ---
 
-{% tf about.md %}
+{% tf pages/about.md %}
