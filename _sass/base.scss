@@ -4,13 +4,32 @@
     color: green;
 }
 
-.nav {
+nav {
     max-width: 95%;
     position: static;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: solid #78C475;
+}
+
+nav a {
+  background-color: rgb(38, 255, 0);
+  text-decoration: none;
+  border-radius: 15%;
+  margin-bottom: 10px;
 }
 
 .wrapper {
+    margin-top: 10px;
     max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-right: solid;
+    border-left: solid;
+    align-self: center;
     //...
 }
 
@@ -62,12 +81,25 @@
 
 p, h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
+  width: 70%;
+}
+
+h1 {
+  left: 50%;
+	margin-left: -50vw;
+	margin-right: -60vw;
+	max-width: 100vw;
+	position: relative;
+	right: 50%;
+	width: 100vw;
 }
 
 body{
     margin: 3%;
     padding: 0px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 html{
@@ -97,7 +129,7 @@ a:link{
 }
 
 a:visited{
-   color: #0004ff;
+   color: #000000;
 }
 
 a:hover{
