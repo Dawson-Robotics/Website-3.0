@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+
+
 ON COMPUTER SCREEN so close it has no boundaries.
 
 A blinding cursor pulses in the electric darkness like a heart coursing with phosphorous light, burning beneath the derma of black-neon glass.
