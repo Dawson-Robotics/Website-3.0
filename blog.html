@@ -17,7 +17,7 @@ permalink: /robot/
 
 {% for post in site.posts %}
   <!-- Trigger/Open The Modal -->
-  <a href="#" id="posty">{{ post.title }} - {{post.excerpt}}</a>
+  <a href="#" id="posty">{{ post.title }} - {{ post.excerpt }}</a>
   <br>
 
   <!-- The Modal -->
@@ -31,7 +31,6 @@ permalink: /robot/
     </div>
 
   </div>
-{% endfor %}
 
 <script>
   // Get the modal
@@ -60,3 +59,5 @@ permalink: /robot/
     }
   }
 </script>
+
+{% endfor %}
