@@ -3,4 +3,4 @@ short_name: jason
 name: Jason Kirsch
 position: Captain
 ---
-{% tf ted.md %}
+{% tf authors/ted.md %}
