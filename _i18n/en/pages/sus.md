@@ -1,0 +1,1 @@
+![Dawson College Logo](../assets/images/Dawson_En_Logo_White_RGB.svg "Dawson College")
