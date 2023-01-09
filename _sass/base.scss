@@ -1,6 +1,26 @@
+//classes go here
+
 .current {
     color: green;
 }
+
+.nav {
+    max-width: 95%;
+    position: static;
+}
+
+.wrapper {
+    max-width: 90%;
+    //...
+}
+
+.footer {
+    background-color:#78C475;
+    color: black;
+    margin-top: 10px;
+}
+
+//html tags go here
 
 p, h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
