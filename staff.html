@@ -9,7 +9,10 @@ permalink_fr: /equipe/
 <ul>
   {% for author in site.authors %}
     <li>
-      <h2><a href="{{ site.baseurl }}/{{ author.url }}">{{ author.name }}</a></h2>
+      <div class="tv-container">
+        <img src="{{ site.baseurl }}/assets/images/television.svg" alt="tv outline" class="televisions">
+        <h2 class="tv-text"><a href="{{ site.baseurl }}/{{ author.url }}">{{ author.name }}</a></h2>
+      </div>
       <h3>{{ author.position }}</h3>
       <p>{{ author.content | markdownify }}</p>
     </li>

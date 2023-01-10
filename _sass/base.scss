@@ -140,3 +140,29 @@ a:hover{
 a:active{
    color: #cc6521;
 }
+
+//team css 
+.televisions {
+  width: 200px;
+}
+
+.tv-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+ul {
+  display: flex;
+}
+
+.tv-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tv-text a {
+  font-size: 12px;
+}
