@@ -152,17 +152,27 @@ a:active{
   color: white;
 }
 
-ul {
+.staff {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .tv-text {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-70%, -50%);
 }
 
 .tv-text a {
   font-size: 12px;
+  background-color: transparent;
+  color: white;
+}
+
+.staff li {
+  width: 30%;
+  list-style: none;
 }
