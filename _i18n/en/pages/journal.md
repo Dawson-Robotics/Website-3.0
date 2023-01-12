@@ -13,4 +13,6 @@ Dawson Robotics team were already working hard on recruiting new members to our 
 <p> And then, on November 7th, Kickoff finally happened. A small group of Dawson Robotics’ members, including both of our co-captains, ventured to École Curé-Antoine Labelle, where the game rules were finally revealed to all. The group was given the CRC Starter Kit and a Dimensions Guide, containing all the dimensions of each and every part of the field, including the game pieces. Now, it was up to the team’s ingenuity and creativity to create something functioning and wonderful. </p>
 
 
+<h3> THE GRIND </h3>
+Due to most people on the Dawson Robotics team being in some sort of science program, whether that be Pure and Applied Science, Health Science or Environmental Science, Dawson Robotics remains quite dormant during most of November and December, due to a large amount of tests and exams (hence, why there is not a lot written for those months). And so, that is why there is always a “January Grind” in the group.
 
