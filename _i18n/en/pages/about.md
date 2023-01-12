@@ -11,16 +11,16 @@ Just like the previous CRC competition, the Avia Competition takes place at the 
 <h3> Game Rules </h3>
 This year, Avia returns to the classic 2 versus 2 competitive format. This year, the two teams are labeled as the Blue Team and the Yellow Team. The goal, as always, is to be the team with the most points. Each team can obtain points by flipping the hexagonal game pieces to their respective team colour. Depending on where the game piece is placed, it will garner the team a different amount of points. Each level on the towers gives a different number of points. The following point system below shows the amount of points given to a team for each level on the towers and the ground/playing field floor:
 
-<ol>
-Level 0 (Ground): 35 points
-Level 1: 10 points
-Level 2: 20 points
-Level 3: 40 points
-Level 4: 80 points
-Level 5: 160 points
-Level 6: 320 points
-Level 7 (only found on the middle tower): 640 points
-</ol>
+<ul>
+<li> Level 0 (Ground): 35 points </li>
+<li>Level 1: 10 points </li>
+<li>Level 2: 20 points </li>
+<li>Level 3: 40 points </li>
+<li>Level 4: 80 points </li>
+<li>Level 5: 160 points </li>
+<li>Level 6: 320 points </li>
+<li>Level 7 (only found on the middle tower): 640 points </li>
+</ul>
 
 
 There are 59 normal game pieces (GPs) and one red game piece that are all scattered on the playing field. The red GP, when placed in a tower, nullifies all the points scored on the levels below it.
