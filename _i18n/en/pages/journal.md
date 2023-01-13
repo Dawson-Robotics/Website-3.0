@@ -1,5 +1,7 @@
 <h1>Journal</h1>
 
+![L+no image+get owned](../assets/images/IMG_5588_.jpg "Jasone")
+
 <h3> Our Progress </h3>
 
 <p> Before we were given the full rules for the competition, members from last year’s 
