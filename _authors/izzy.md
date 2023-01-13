@@ -1,6 +1,6 @@
 ---
 short_name: izzy
-name: 
+name: Israel Aristide
 position: ["Website",", Programming"]
 ---
 {% tf authors/izzy.md %}
