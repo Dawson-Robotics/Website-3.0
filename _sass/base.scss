@@ -153,6 +153,7 @@ a:active{
   height: auto;
   filter: brightness(80%);
   transition: filter 0.5s linear;
+  pointer-events: none;
 }
 
 .tv-container:hover .televisions {
@@ -282,7 +283,7 @@ h2{
     width: auto;
     height: auto;
     display: flex;
-    h2{
+    a {
       position: relative;
       z-index: 1;
     }
