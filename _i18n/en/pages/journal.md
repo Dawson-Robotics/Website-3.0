@@ -1,6 +1,6 @@
 <h1>Journal</h1>
 
-![L+no image+get owned](../assets/images/IMG_5588_.jpg "Jasone")
+![L+no image+getowned](../assets/images/IMG_5588_.jpeg "Jasone")
 
 <h3> Our Progress </h3>
 
