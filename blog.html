@@ -9,18 +9,9 @@ permalink: /robot/
 
 <h1>Latest Posts</h1>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
-
 {% for post in site.posts %}
   <!-- Trigger/Open The Modal -->
-  <a id="posty - {{ post.title }}">{{ post.title }} - {{ post.excerpt }}</a>
+  <a id="posty - {{ post.title }}">{{ post.title }}</a>
   <br>
 
   <!-- The Modal -->
@@ -52,8 +43,8 @@ permalink: /robot/
         }
     
         // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event{{ post.title }}) {
-          if (event{{ post.title }}.target == modal{{ post.title }}) {
+        window.onclick = function(event) {
+          if (event.target == modal{{ post.title }}) {
             modal{{ post.title }}.style.display = "none";
           }
         }
