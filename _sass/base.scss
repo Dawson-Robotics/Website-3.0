@@ -37,50 +37,6 @@ nav a:hover {
   border: var(--clr);
 }
 
-a i {
-  position: absolute;
-  //inset: 0;
-  display: block;
-}
-
-a i::before {
-  content: '';
-  position: absolute;
-  top: 0%;
-  bottom: auto;
-  left: 80%;
-  right: auto;
-  width: 10px;
-  height: 2px;
-  background: black;
-  transform: translateX(-50%) skewX(325deg);
-  transition: 0.5s;
-}
-
-a:hover i::before {
-  width: 20px;
-  left: 20%;
-}
-
-a i::after {
-  content: '';
-  position: absolute;
-  top: auto;
-  bottom: 0%;
-  left: 20%;
-  right: auto;
-  width: 10px;
-  height: 2px;
-  background: black;
-  transform: translateX(-50%) skewX(325deg);
-  transition: 0.5s;
-}
-
-a:hover i::after {
-  width: 20px;
-  left: 80%;
-}
-
 .wrapper {
     margin-top: 10px;
     max-width: 90%;

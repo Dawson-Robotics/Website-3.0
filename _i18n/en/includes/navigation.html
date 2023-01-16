@@ -2,7 +2,6 @@
     {% for item in site.data.navigation-en %}
       <a href="{{ item.link }}" style="--clr:#78C475" {% if page.url == item.link %}class="current"{% endif %}>
         {{ item.name }}
-        <i></i>
       </a>
     {% endfor %}
 </nav>
