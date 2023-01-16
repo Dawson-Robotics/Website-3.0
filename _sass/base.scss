@@ -49,12 +49,16 @@ nav {
 
 nav a {
   background-color: black;
-  border: 2px solid rgb(38, 255, 0);
+  border: 2px solid #78C475;
   text-decoration: none;
   border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
   margin-bottom: 10px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   transition: 0.5s;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 nav a:before {
@@ -83,6 +87,7 @@ nav a:hover {
     border-right: solid;
     border-left: solid;
     align-self: center;
+    margin: auto;
     //...
 }
 
