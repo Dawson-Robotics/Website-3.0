@@ -3,17 +3,18 @@
 document.addEventListener('DOMContentLoaded', main);
 
 let angle = 0;
-const ANGLE_INCREMENT = 0.01;
-let strings = ['A Choice', 'Un Choix', "Choose Your Language", "Choisisez Votre Langue"]
+const ANGLE_INCREMENT = 0.025;
+let strings = ['Dawson Robotics', 'Robotiques Dawson', "Choose Your Language", "Choisisez Votre Langue", "English Or French?", "Anglais Ou Francais?"]
 let string = 0;
 let next = 3.14;
+let angleint;
 
 let text;
 
 function main(event) {
 
     text = document.getElementById("LangChoose");
-    setInterval(incAngle, 25);
+    angleint = setInterval(incAngle, 25);
     setInterval(eventloop, 10);
 
 }

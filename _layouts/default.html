@@ -1,9 +1,16 @@
 <!doctype html>
-<html lang="{{ site.lang }}">
- 
+
 {% include head.html %}
 
 <body>
+  
+  <link rel="stylesheet" href="https://unpkg.com/transition-style">
+
+
+  <div id="transition" transition-style="out:wipe:bottom-right">
+    <h1>Hello World</h1>
+  </div>
+
   {% include navigation.html %}
 
   <div class="wrapper">
@@ -21,5 +28,7 @@
     {% endif %}
     {% endfor %}
   </footer>
+
 </body>
-</html>
+
+
