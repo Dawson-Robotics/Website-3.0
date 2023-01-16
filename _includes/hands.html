@@ -22,7 +22,7 @@
     
         .hand {
             transition: all 3s cubic-bezier(.07,.12,.09,1.06);
-            filter: brightness(50%)
+            filter: brightness(20%)
         }
     
         .hand:hover {
@@ -34,8 +34,10 @@
             font-weight: bolder;
             text-align: center;
             font-size: 23px;
-            margin: 0;
+            margin: auto;
         }
+
+
     
         .hand img {
             width: 240px;
@@ -62,12 +64,12 @@
         </style>
         <script src="{{ '/assets/js/hands.js' | relative_url }}"></script>
         <section class="hands">
-        <article onclick="location.href='{{ site.baseurl }}/home'" class="hand right" >
+        <article onclick="redirEng();" class="hand right" >
             
             <img  src="{{ '/assets/images/hands_assets/frame_0_delay-0.12s.png' | relative_url }}" id="handimg" alt=""> 
             <p>English</p>
         </article>
-        <article onclick="location.href='{{ site.baseurl }}/fr/acceuil'" class="hand left">
+        <article onclick="redirFr();" class="hand left">
             
             <img src="{{ '/assets/images/hands_assets/frameb_0_delay-0.12s.png' | relative_url }}" id="lefthandimg" alt=""> 
             <p>Francais</p>
