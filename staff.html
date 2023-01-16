@@ -6,10 +6,36 @@ permalink: /staff/
 permalink_fr: /equipe/
 ---
 
-<ul>
+<ul class="staff">
   {% for author in site.authors %}
     <li>
-      <h2><a href="{{ site.baseurl }}/{{ author.url }}">{{ author.name }}</a></h2>
+
+      <svg class="filter">
+        <filter id="alphaRed">
+          <feColorMatrix mode="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="joint" />
+        </filter>
+        <filter id="alphaGreen">
+          <feColorMatrix mode="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 1 0" result="joint" />
+        </filter>
+        <filter id="alphaBlue">
+          <feColorMatrix mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" result="joint" />
+        </filter>
+        <filter id="alpha">
+          <feColorMatrix type="saturate" values="0" />
+        </filter>
+      </svg>
+
+      <div class="tv-container">
+        <img src="{{ site.baseurl }}/assets/images/television.svg" alt="tv outline" class="televisions">
+
+        <!-- <div class="static-container"> -->
+          <img src="{{ site.baseurl }}/assets/images/static.PNG" alt="static" class="green">
+          <img src="{{ site.baseurl }}/assets/images/static.PNG" alt="static" class="blue">
+          <img src="{{ site.baseurl }}/assets/images/static.PNG" alt="static" class="red">
+
+        <h2 class="tv-text"><a href="{{ site.baseurl }}/{{ author.url }}">{{ author.name }}</a></h2>
+        <!-- </div> -->
+      </div>
       <h3>{{ author.position }}</h3>
       <p>{{ author.content | markdownify }}</p>
     </li>
