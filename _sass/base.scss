@@ -105,6 +105,10 @@ nav a {
     font-size: 28px;
     font-weight: bold;
   }
+
+  img {
+    width: 100%;
+  }
   
   .close:hover,
   .close:focus {
@@ -127,15 +131,15 @@ li{
   font-weight: bold;
 }
 
-h1 {
-  left: 50%;
-	margin-left: -50vw;
-	margin-right: -60vw;
-	max-width: 100vw;
-	position: relative;
-	right: 50%;
-	width: 100vw;
-}
+// h1 {
+//   left: 50%;
+// 	margin-left: -50vw;
+// 	margin-right: -60vw;
+// 	max-width: 100vw;
+// 	position: relative;
+// 	right: 50%;
+// 	width: 100vw;
+// }
 
 body{
     margin: 0px;
