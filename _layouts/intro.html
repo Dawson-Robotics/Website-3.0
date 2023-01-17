@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+ 
+{% include head.html %}
+
+<body>
+    
+
+<!-- <script src="{{ '/assets/js/matrixrain.js' | relative_url }}"></script> -->
+<!-- <script defer src="{{ '/assets/js/rain.js' | relative_url }}"></script> -->
+<style>
+
+    body {
+
+    margin: 0;
+    text-align: center  ;
+    }
+
+    div#picker {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    
+</style>
+<!-- 
+<img id="canvas" src="{{ site.baseurl }}/assets/images/morpheus.jpg" alt=""> -->
+
+{% include hands.html %}
+
+<link rel="stylesheet" href="https://unpkg.com/transition-style">
+
+    <div id="transition-in" hidden>
+        <h1>Hello World</h1>
+    </div>
+
+</body>

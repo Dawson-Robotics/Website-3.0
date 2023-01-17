@@ -1,7 +1,10 @@
 ---
-layout: default
-title: About
----
-# About page
+layout: page
+title: pages.about
 
-This page tells you a little bit about me. About Me.
+namespace: about
+permalink: /about-us/
+permalink_fr: /a-propos/
+---
+
+{% tf pages/about.md %}

@@ -1,0 +1,1 @@
+guardez vos amis proches et vos enemies mortss

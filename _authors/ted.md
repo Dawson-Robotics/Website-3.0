@@ -1,6 +1,6 @@
 ---
-short_name: ted
-name: Ted Doe
-position: Writer
+short_name: jason
+name: Jason Kirsch
+position: Captain
 ---
-Ted has been eating fruit since he was baby.
+{% tf authors/ted.md %}

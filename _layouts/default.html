@@ -1,13 +1,34 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>{% t site.name %} - {% t site.title %}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
-  </head>
-  <body>
-    {% include navigation.html %}
+
+{% include head.html %}
+
+<body>
+  
+  <link rel="stylesheet" href="https://unpkg.com/transition-style">
+
+
+  <div id="transition" transition-style="out:wipe:bottom-right">
+    <h1>Hello World</h1>
+  </div>
+
+  {% include navigation.html %}
+
+  <div class="wrapper">
     {{ content }}
-    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
-  </body>
-</html>
+  </div>
+    
+  <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+  <footer>
+    {% for lang in site.languageNames %}
+    {% if lang[0] == site.lang %} {% continue %} {% endif %}
+    {% if page.namespace %}
+    <a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a>
+    {% else %}
+    <a href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+    {% endif %}
+    {% endfor %}
+  </footer>
+
+</body>
+
+
