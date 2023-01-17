@@ -1,0 +1,14 @@
+<nav>
+    {% for item in site.data.navigation-fr %}
+      <a href="{{ item.link }}" {% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
+    {% endfor %}
+
+    {% for lang in site.languageNames %}
+      {% if lang[0] == site.lang %} {% continue %} {% endif %}
+      {% if page.namespace %}
+        <a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a>
+        {% else %}
+        <a href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+      {% endif %}
+    {% endfor %}
+</nav>
