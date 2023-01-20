@@ -1,0 +1,80 @@
+<br>
+
+<style>
+    * {box-sizing:border-box}
+
+    /* Slideshow container */
+    .slideinfo {
+        opacity: 0;
+        text-align: center;
+    }
+
+    .slideinfo:hover {
+        color: white;
+        text-align: center;
+        opacity: 1;
+    }
+
+    .slideshow-container {
+        max-width: 850px;
+        margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* On hover, picture has little bit see-through */
+    .slideshow-container:hover {
+        opacity: 0.5;
+    }
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {opacity: .1}
+        to {opacity: 1}
+    }
+</style>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  {% for image in site.static_files %}
+    {% if image.path contains '/assets/images/home_page_slides' %}
+      <div class="mySlides fade">
+        <a href="{{ image.path | absolute_url }}">
+          <div class="slideinfo"> 
+            <p>{{ image.modified_time | remove: "-0400" }}</p>
+          </div>
+          <img src=" {{ image.path | absolute_url }} " style="width:100%">
+        </a>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+</div>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+        
+</script>
+<br>
