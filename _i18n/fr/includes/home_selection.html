@@ -1,5 +1,25 @@
+<style>
+  .home-nav a{
+    background-color: greenyellow;
+    color: black;
+    margin-bottom: 10em;
+    max-height: fit-content;
+    right: 0em;
+    padding: 3em;
+    border-radius: 2em;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+  }
+
+  .home-nav a:hover {
+    background-color: red;
+    color: white;
+  }
+</style>
+
 <div class="home-nav">
-    {% for item in site.data.navigation-fr %}
+    {% for item in site.data.navigation-fr offset: 1 %}
       <a href="{{ item.link }}">{{ item.name }}</a> 
       <br>
     {% endfor %}
