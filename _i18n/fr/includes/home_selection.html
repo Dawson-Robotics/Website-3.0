@@ -20,7 +20,8 @@
 
 <div class="home-nav">
     {% for item in site.data.navigation-fr offset: 1 %}
-      <a href="{{ item.link }}">{{ item.name }}</a> 
+      <a href="{{ site.baseurl }}{{ item.link }}">{{ item.name }}</a> 
       <br>
     {% endfor %}
 </div>
+

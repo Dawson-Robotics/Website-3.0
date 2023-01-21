@@ -1,45 +1,54 @@
 <br>
 
 <style>
-    * {box-sizing:border-box}
+  * {box-sizing:border-box}
 
-    /* Slideshow container */
-    .slideinfo {
-        opacity: 0;
-        text-align: center;
-    }
+  /* Slideshow container */
+  .slideinfo {
+    opacity: 0;
+    text-align: center;
+  }
 
-    .slideinfo:hover {
-        color: white;
-        text-align: center;
-        opacity: 1;
-    }
+  .slideinfo:hover {
+    color: white;
+    text-align: center;
+    opacity: 1;
+  }
 
-    .slideshow-container {
-        max-width: 850px;
-        margin: auto;
-    }
+  .slideshow-container {
+    max-width: 850px;
+    margin: auto;
+  }
 
-    /* Hide the images by default */
-    .mySlides {
-        display: none;
-    }
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
 
-    /* On hover, picture has little bit see-through */
-    .slideshow-container:hover {
-        opacity: 0.5;
-    }
+  /* On hover, picture has little bit see-through
+  .slideshow-container:hover {
+    opacity: 0.5;
+  } 
+  */
 
-    /* Fading animation */
-    .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
 
-    @keyframes fade {
-        from {opacity: .1}
-        to {opacity: 1}
-    }
+  @keyframes fade {
+    from {opacity: .1}
+    to {opacity: 1}
+  }
+
+  .image-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 10px;
+    width: 95%; /* Could be more or less, depending on screen size */
+  }
+
 </style>
 
 <!-- Slideshow container -->
@@ -48,33 +57,76 @@
   <!-- Full-width images with number and caption text -->
   {% for image in site.static_files %}
     {% if image.path contains 'assets/images/home_page_slides' %}
-      <div class="mySlides fade">
-        <a href="{{ image.path | absolute_url }}">
-          <div class="slideinfo"> 
-            <p>{{ image.modified_time | remove: "-0400" }}</p>
-          </div>
-          <img src=" {{ image.path | absolute_url }} " style="width:100%">
-        </a>
+      
+      <!-- The Modal -->
+      <div id="posting - {{ image.basename }}" class="post">
+          
+        <!-- Modal content -->
+        <div class="post-content">
+          <span class="close - {{ image.basename }}">&times;</span>
+          <img src=" {{ image.path | absolute_url }} " style="width:90%">
+        </div>
+
       </div>
+
+      <div class="mySlides fade">
+        
+        <!-- Trigger/Open The Modal -->
+        <a id="posty - {{ image.basename }}">
+          <img src=" {{ image.path | absolute_url }} " style="width:50%">
+        </a>
+
+      </div>
+
+      <script>
+        
+        // Get the modal
+        var modal{{ image.basename }} = document.getElementById("posting - {{ image.basename }}");
+      
+        // Get the button that opens the modal
+        var btn{{ image.basename }} = document.getElementById("posty - {{ image.basename }}");
+      
+        // Get the <span> element that closes the modal
+        var span{{ image.basename }} = document.getElementsByClassName("close - {{ image.basename }}")[0];
+      
+        // When the user clicks on the button, open the modal
+        btn{{ image.basename }}.onclick = function() {
+          modal{{ image.basename }}.style.display = "block";
+        }
+      
+        // When the user clicks on <span> (x), close the modal
+        span{{ image.basename }}.onclick = function() {
+          modal{{ image.basename }}.style.display = "none";
+        }
+      
+        // When the user clicks anywhere outside of the modal, close it
+        window.addEventListener("click", function(event) {
+          if (event.target == modal{{ image.basename }}) {
+            modal{{ image.basename }}.style.display = "none";
+          }
+        });
+      
+      
+      </script>
+
     {% endif %}
   {% endfor %}
 
 </div>
 <script>
-    let slideIndex = 0;
-    showSlides();
+  let slideIndex = 0;
+  showSlides();
 
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        slides[slideIndex-1].style.display = "block";
-        setTimeout(showSlides, 4000); // Change image every 4 seconds
-        }
-        
+  function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 4000); // Change image every 4 seconds
+      }
 </script>
 <br>
