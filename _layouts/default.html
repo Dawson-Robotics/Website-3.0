@@ -1,16 +1,23 @@
 <!doctype html>
-<html lang="{{ site.lang }}">
- 
+
 {% include head.html %}
 
 <body>
+
+  <link rel="stylesheet" href="https://unpkg.com/transition-style">
+
+
+  <div id="transition" transition-style="out:wipe:bottom-right">
+    <h1>Hello World</h1>
+  </div>
+
   {% include navigation.html %}
 
   <div class="wrapper">
     {{ content }}
   </div>
     
-  <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
   <footer>
     {% for lang in site.languageNames %}
     {% if lang[0] == site.lang %} {% continue %} {% endif %}
@@ -21,5 +28,7 @@
     {% endif %}
     {% endfor %}
   </footer>
+
 </body>
-</html>
+
+

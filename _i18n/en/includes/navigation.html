@@ -1,5 +1,16 @@
 <nav>
     {% for item in site.data.navigation-en %}
-      <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+      <a href="{{ site.baseurl }}{{ item.link }}" style="--clr:#78C475" {% if page.url == item.link %}class="current"{% endif %}>
+        {{ item.name }}
+      </a>
+    {% endfor %}
+    
+    {% for lang in site.languageNames %}
+      {% if lang[0] == site.lang %} {% continue %} {% endif %}
+      {% if page.namespace %}
+        <a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a>
+        {% else %}
+        <a href="{{ site.baseurl }}">{{ lang[1] }}</a>
+      {% endif %}
     {% endfor %}
 </nav>

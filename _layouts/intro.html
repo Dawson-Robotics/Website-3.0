@@ -10,13 +10,6 @@
 <!-- <script defer src="{{ '/assets/js/rain.js' | relative_url }}"></script> -->
 <style>
 
-    #canvas {
-        height: 100vh;
-        z-index: -1;
-        position: absolute;
-        /* transform: translate(-50vw); */
-    }
-
     body {
 
     margin: 0;
@@ -37,5 +30,11 @@
 <img id="canvas" src="{{ site.baseurl }}/assets/images/morpheus.jpg" alt=""> -->
 
 {% include hands.html %}
+
+<link rel="stylesheet" href="https://unpkg.com/transition-style">
+
+    <div id="transition-in" hidden>
+        <h1>Hello World</h1>
+    </div>
 
 </body>

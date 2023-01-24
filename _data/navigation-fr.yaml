@@ -1,13 +1,13 @@
 - name: Acceuil
-  link: /Website-3.0/fr/acceuil/
+  link: /acceuil/
 - name: À propos
-  link: /Website-3.0/fr/a-propos/
+  link: /a-propos/
 - name: Le robot
-  link: /Website-3.0/fr/robot/
+  link: /robot/
 - name: Le journal
-  link: /Website-3.0/fr/un-journal/
+  link: /un-journal/
 - name: Équipe
-  link: /Website-3.0/fr/equipe/
+  link: /equipe/
 - name: Média
-- name: English
+  link: /media/
 
