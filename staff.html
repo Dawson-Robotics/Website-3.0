@@ -1,10 +1,61 @@
 ---
-layout: default
+layout: team
 title: Staff
 namespace: team
 permalink: /staff/
 permalink_fr: /equipe/
 ---
+
+<style>
+  * {box-sizing:border-box}
+
+  /* Slideshow container */
+  .slideinfo {
+    opacity: 0;
+    text-align: center;
+  }
+
+  .slideinfo:hover {
+    color: white;
+    text-align: center;
+    opacity: 1;
+  }
+
+  .slideshow-container {
+    max-width: 850px;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* On hover, picture has little bit see-through
+  .slideshow-container:hover {
+    opacity: 0.5;
+  } 
+  */
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .1}
+    to {opacity: 1}
+  }
+
+  .image-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 10px;
+    width: 95%; /* Could be more or less, depending on screen size */
+  }
+
+</style>
 
 <ul class="staff">
   {% for author in site.authors %}
@@ -32,9 +83,58 @@ permalink_fr: /equipe/
           <img src="{{ site.baseurl }}/assets/images/static.PNG" alt="static" class="green">
           <img src="{{ site.baseurl }}/assets/images/static.PNG" alt="static" class="blue">
           <img src="{{ site.baseurl }}/assets/images/static.PNG" alt="static" class="red">
+          <img src="{{ site.baseurl }}{{ author.image_link }}" alt="{{ author.name }}" class="author1">
 
-        <h2 class="tv-text"><a href="{{ site.baseurl }}/{{ author.url }}">{{ author.name }}</a></h2>
+        <h2 class="tv-text"><a id="teamwork - {{ author.short_name }}">{{ author.name }}</a></h2>
         <!-- </div> -->
+
+      </div>
+
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+            <!-- The Modal -->
+            <div id="team - {{ author.short_name }}" class="post">
+                
+              <!-- Modal content -->
+              <div class="post-content">
+                <span class="close - {{ author.short_name }}">&times;</span>
+                <img src="{{ site.baseurl }}{{ author.image_link }}" style="width:90%">
+              </div>
+
+            <script>
+              
+              // Get the modal
+              var modal{{ author.short_name }} = document.getElementById("team - {{ author.short_name }}");
+            
+              // Get the button that opens the modal
+              var btn{{ author.short_name }} = document.getElementById("teamwork - {{ author.short_name }}");
+            
+              // Get the <span> element that closes the modal
+              var span{{ author.short_name }} = document.getElementsByClassName("close - {{ author.short_name }}")[0];
+            
+              // When the user clicks on the button, open the modal
+              btn{{ author.short_name }}.onclick = function() {
+                modal{{ author.short_name }}.style.display = "block";
+              }
+            
+              // When the user clicks on <span> (x), close the modal
+              span{{ author.short_name }}.onclick = function() {
+                modal{{ author.short_name }}.style.display = "none";
+              }
+            
+              // When the user clicks anywhere outside of the modal, close it
+              window.addEventListener("click", function(event) {
+                if (event.target == modal{{ author.short_name }}) {
+                  modal{{ author.short_name }}.style.display = "none";
+                }
+              });
+            
+            
+            </script>
+
+      </div>
+
       </div>
       <h3>{{ author.position }}</h3>
       <p>{{ author.content | markdownify }}</p>
