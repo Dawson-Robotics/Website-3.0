@@ -134,6 +134,8 @@ img{
     margin: 1.5em auto; /* 15% from the top and centered */
     padding: 1em;
     width: 70%; /* Could be more or less, depending on screen size */
+    max-height: 95%;
+    overflow:inherit;
   }
   
   /* The Close Button */

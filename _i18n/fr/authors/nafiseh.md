@@ -1,0 +1,1 @@
+Je ne suis pas si mauvaise, une fois que tu apprends à me connaître! 
