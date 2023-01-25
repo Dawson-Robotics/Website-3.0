@@ -49,10 +49,16 @@ permalink_fr: /equipe/
   }
 
   .image-content {
-    background-color: #fefefe;
-    margin: 10% auto; /* 15% from the top and centered */
-    padding: 10px;
-    width: 95%; /* Could be more or less, depending on screen size */
+    {% if site.lang == "fr" %}
+      background-color: blue;
+      {% else %}
+      background-color: red;
+    {% endif %}
+    margin: 1.5em auto; /* 15% from the top and centered */
+    padding: 1em;
+    width: 70%; /* Could be more or less, depending on screen size */
+    max-height: 95%;
+    overflow:inherit;
   }
 
 </style>
@@ -97,7 +103,7 @@ permalink_fr: /equipe/
             <div id="team - {{ author.short_name }}" class="post">
                 
               <!-- Modal content -->
-              <div class="post-content">
+              <div id="teaming - {{ author.short_name }}" class="image-content">
                 <span class="close - {{ author.short_name }}">&times;</span>
                 <img src="{{ site.baseurl }}{{ author.image_link }}" style="width:90%">
               </div>
@@ -106,7 +112,9 @@ permalink_fr: /equipe/
               
               // Get the modal
               var modal{{ author.short_name }} = document.getElementById("team - {{ author.short_name }}");
-            
+              
+              var contento{{ author.short_name }} = document.getElementsByClassName("image-content");
+
               // Get the button that opens the modal
               var btn{{ author.short_name }} = document.getElementById("teamwork - {{ author.short_name }}");
             
