@@ -76,6 +76,12 @@ permalink_fr: /equipe/
 
 </style>
 
+{% if site.lang == "fr" %}
+  <h1>Nos membres d'équipe dédié:</h1>
+  {% else %}
+  <h1>Our dedicated team members:</h1>
+{% endif %}
+
 <ul class="staff">
   {% for author in site.authors %}
     <li>
@@ -119,6 +125,7 @@ permalink_fr: /equipe/
           <div id="teaming - {{ author.short_name }}" class="image-content">
             <span class="close - {{ author.short_name }}">&times;</span>
             <img src="{{ site.baseurl }}{{ author.image_link }}" style="width:90%">
+            <p>{{ author.content | markdownify }}</p>
           </div>
 
           <script>
@@ -157,8 +164,15 @@ permalink_fr: /equipe/
         </div>
 
       </div>
-      <h3>{{ author.position }}</h3>
-      <p>{{ author.content | markdownify | truncate: 50 }}</p>
+      <h3>
+        {{ author.name }}
+        <p>---</p>
+        {% if site.lang == "fr" %}
+          {{ author.position_fr }}
+          {% else %}
+          {{ author.position }}
+        {% endif %}
+      </h3>
     </li>
   {% endfor %}
 </ul>
