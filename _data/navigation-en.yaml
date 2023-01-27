@@ -1,13 +1,13 @@
 - name: Home
-  link: /Website-3.0/home/
+  link: /home/
 - name: About
-  link: /Website-3.0/about-us/
+  link: /about-us/
 - name: Robot
-  link: /Website-3.0/robot/
+  link: /robot/
 - name: Journal
-  link: /Website-3.0/journal/
+  link: /journal/
 - name: Team
-  link: /Website-3.0/staff/
+  link: /staff/
 - name: Media
-  link: /Website-3.0/media/
-- name: Francais
+  link: /media/
+

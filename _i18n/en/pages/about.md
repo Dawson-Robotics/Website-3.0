@@ -1,5 +1,14 @@
 # About page
 
+<!-- Import the component -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<!-- Use it like any other HTML element -->
+<model-viewer class="field_model" alt="Avia 2023 Game Field" src="../assets/field/game_field.glb" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+
+<!--ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" -->
+
+
 <h3> What is CRC </h3>
 
 Ever since 2001, the Canadian Robotics Competition has been a popular competition across Quebec, uniting high schools and cégeps together to learn about robotics, programming, web design, and so much more (including having a fun and nerdy social life). Every year has had a brand new competition, ranging to robots shooting tennis balls into bucket-like containers to earn points, to a teamwork competition where robots must interact with devices to obtain points. This year, CRC has created the Avia competition, where two teams of two robots compete to obtain points by flipping hexagonal pieces to their respective colour.
