@@ -78,18 +78,18 @@ nav a:hover {
 }
 
 .wrapper {
-    margin-top: 10px;
-    max-width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    border-right: solid;
-    border-left: solid;
-    align-self: center;
-    margin: auto;
-    //...
+  margin-top: 10px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  border-right: solid;
+  border-left: solid;
+  align-self: center;
+  margin: auto;
+  //...
 }
 
 .wrapper_author {
@@ -190,11 +190,12 @@ li{
 // }
 
 body{
-    margin: 0px;
-    padding: 0px;
-    // box-sizing: border-box;
-    // display: flex;
-    // flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  //text-align: center;
+  // box-sizing: border-box;
+  // display: flex;
+  // flex-direction: column;
 }
 
 html{
