@@ -5,54 +5,20 @@ namespace: robot
 permalink: /robot/
 ---
 
+<style>
+  img {
+    border-radius: 1em;
+  }
+
+  .flippyPart img {
+    width: 25%;
+    margin: auto;
+    display: inline-flex;
+    align-items: center;
+  }
+
+</style>
+
 {% tf pages/robot.md %}
 
-<h1>Latest Posts</h1>
-
-{% for post in site.posts %}
-  <!-- Trigger/Open The Modal -->
-  <a id="posty - {{ post.title }}">{{ post.title }}</a>
-  <br>
-
-  <!-- The Modal -->
-  <div id="posting - {{ post.title }}" class="post">
-    
-  <!-- Modal content -->
-    <div class="post-content">
-      <span class="close - {{ post.title }}">&times;</span>
-      <h1>{{ post.title }}</h1>
-      <p>{{ post.content }}</p>
-    </div>
-
-  </div>
-
-  <script>
-    // Get the modal
-    var modal{{ post.title }} = document.getElementById("posting - {{ post.title }}");
-
-    // Get the button that opens the modal
-    var btn{{ post.title }} = document.getElementById("posty - {{ post.title }}");
-
-    // Get the <span> element that closes the modal
-    var span{{ post.title }} = document.getElementsByClassName("close - {{ post.title }}")[0];
-
-    // When the user clicks on the button, open the modal
-    btn{{ post.title }}.onclick = function() {
-      modal{{ post.title }}.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span{{ post.title }}.onclick = function() {
-      modal{{ post.title }}.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.addEventListener("click", function(event) {
-      if (event.target == modal{{ post.title }}) {
-        modal{{ post.title }}.style.display = "none";
-      }
-    });
-  </script>
-
-
-{% endfor %}
+  
