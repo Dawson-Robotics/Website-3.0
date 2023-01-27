@@ -1,8 +1,8 @@
 ---
 short_name: sarah
-name: Sarah Hunt
-position: Kiosk
-position_fr: Kiosque
+name: Sara Hernandez
+position: Robot
+position_fr: Robot
 image_link: /assets/images/members/sarah.jpg
 ---
 {% tf authors/sarah.md %}
