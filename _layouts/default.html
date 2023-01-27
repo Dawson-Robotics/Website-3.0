@@ -8,7 +8,7 @@
 
 
   <div id="transition" transition-style="out:wipe:bottom-right">
-    <h1>Hello World</h1>
+    <img src="{{ '/assets/images/Dawtrix.png | relative_url }}" alt="">
   </div>
 
   {% include navigation.html %}
@@ -28,6 +28,10 @@
     {% endif %}
     {% endfor %}
   </footer>
+
+    <div id="transition-in" hidden>
+        <img src="{{ '/assets/images/Dawtrix.png | relative_url }}" alt="">
+    </div>
 
 </body>
 
