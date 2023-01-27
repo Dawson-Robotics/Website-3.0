@@ -1,0 +1,1 @@
+Le triangle est supérieur

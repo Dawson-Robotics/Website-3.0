@@ -1,1 +1,1 @@
-hahaha kiosk go brr
+He is beginning to BELIEVE

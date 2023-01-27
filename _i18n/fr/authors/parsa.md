@@ -1,0 +1,1 @@
+Un gars qui suit ses rêves et atteint ses objectifs, quoi qu'il en coûte pour lui.
