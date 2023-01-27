@@ -46,6 +46,9 @@ nav {
     display: flex;
     justify-content: space-evenly;
     border-bottom: solid #78C475;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: inherit;
 }
 
 nav a {
