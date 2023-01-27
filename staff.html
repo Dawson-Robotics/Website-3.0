@@ -74,6 +74,21 @@ permalink_fr: /equipe/
       max-width: 75%;
   }
 
+  #wrapper{
+   height: 90%;
+   width: 48%;
+   display: block;
+   float: left;
+   border: solid purple 3px;
+ }
+
+ #info{
+  height: 40%;
+  width: 48%;
+  display: block;
+  border: solid cyan 3px;
+  float: left;
+ }
 </style>
 
 {% if site.lang == "fr" %}
@@ -124,8 +139,40 @@ permalink_fr: /equipe/
           <!-- Modal content -->
           <div id="teaming - {{ author.short_name }}" class="image-content">
             <span class="close - {{ author.short_name }}">&times;</span>
-            <img src="{{ site.baseurl }}{{ author.image_link }}" style="width:90%">
-            <p>{{ author.content | markdownify }}</p>
+            <div class="floatdown">
+              <div id="wrapper">	
+               <header>
+                <h1>
+                 Wanted
+                </h1>
+                <h2>
+                 Preferably alive
+                </h2>
+               </header>
+               <section>
+                <img src="{{ author.image_link }}">
+               </section>
+               <footer>	
+                <h3>
+                 Reward: 1000 social credits in Dawtrix
+                </h3>
+               </footer>
+              </div>
+              <div id="info">
+               <h2>
+                Additional information
+               </h2>
+               <h3>
+                Name: Poutine
+               </h3>
+               <h3>
+                Participation: Website
+               </h3>
+               <h3>
+                Code:  "very delish Quebec food"
+               </h3>
+              </div>	
+             </div>
           </div>
 
           <script>
