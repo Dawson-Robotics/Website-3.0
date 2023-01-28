@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: default
+layout: home
 namespace: home
 permalink: /home/
 permalink_fr: /acceuil/

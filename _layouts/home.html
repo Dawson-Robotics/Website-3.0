@@ -1,0 +1,24 @@
+<!doctype html>
+
+{% include head.html %}
+
+<body>
+
+  <link rel="stylesheet" href="https://unpkg.com/transition-style">
+
+
+  <div id="transition" transition-style="out:wipe:bottom-right">
+    <h1>Hello World</h1>
+  </div>
+
+  
+
+  <div class="wrapper">
+    {{ content }}
+  </div>
+    
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+</body>
+
+
