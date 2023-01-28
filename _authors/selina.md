@@ -1,7 +1,7 @@
 ---
 short_name: selina
-name: Matrix4
-position: ???
+name: Selina Yin
+position: Robot, Kiosk
 position_fr: ???
 image_link: /assets/images/members/selina.jpg
 ---
