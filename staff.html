@@ -21,7 +21,7 @@ permalink_fr: /equipe/
     opacity: 1;
   }
 
-  .slideshow-container {
+  .teaminfo-container {
     max-width: 850px;
     margin: auto;
   }
@@ -57,11 +57,45 @@ permalink_fr: /equipe/
     margin: 1.5em auto; /* 15% from the top and centered */
     padding: 1em;
     width: 70%; /* Could be more or less, depending on screen size */
-    max-height: 95%;
-    overflow:inherit;
+    overflow: inherit;
+    border-radius: 5em;
+    display: block;
+    animation: fadingIn 2s linear 0s 1;
+  }
+  
+  @keyframes fadingIn {
+    from: {opacity: 0.1;}
+    to: {opacity: 1;}
   }
 
+  .image-content img {
+      padding: 1em;
+      border-radius: 4em;
+      max-width: 75%;
+  }
+
+  #wrapper{
+   height: 90%;
+   width: 48%;
+   display: block;
+   float: left;
+   border: solid purple 3px;
+  }
+
+ #info{
+  height: 40%;
+  width: 48%;
+  display: block;
+  border: solid cyan 3px;
+  float: left;
+ }
 </style>
+
+{% if site.lang == "fr" %}
+  <h1>Nos membres d'équipe dédié:</h1>
+  {% else %}
+  <h1>Our dedicated team members:</h1>
+{% endif %}
 
 <ul class="staff">
   {% for author in site.authors %}
@@ -97,55 +131,95 @@ permalink_fr: /equipe/
       </div>
 
       <!-- Slideshow container -->
-      <div class="slideshow-container">
+      <div class="teaminfo-container">
 
-            <!-- The Modal -->
-            <div id="team - {{ author.short_name }}" class="post">
-                
-              <!-- Modal content -->
-              <div id="teaming - {{ author.short_name }}" class="image-content">
-                <span class="close - {{ author.short_name }}">&times;</span>
-                <img src="{{ site.baseurl }}{{ author.image_link }}" style="width:90%">
+        <!-- The Modal -->
+        <div id="team - {{ author.short_name }}" class="post">
+            
+          <!-- Modal content -->
+          <div id="teaming - {{ author.short_name }}" class="image-content">
+            <span class="close - {{ author.short_name }}">&times;</span>
+            <div class="floatdown">
+              <div id="wrapper">	
+                <header>
+                  <h1>
+                    Wanted
+                  </h1>
+                  <h2>
+                    Preferably alive
+                  </h2>
+                </header>
+                <section>
+                  <img src="{{ author.image_link }}">
+                </section>
+                <footer>	
+                  <h3>
+                    Reward: 42069 social credits in Dawtrix
+                  </h3>
+                </footer>
               </div>
+              <div id="info">
+                <h2>
+                  Additional information
+                </h2>
+                <h3>
+                  Name: Poutine
+                </h3>
+                <h3>
+                  Participation: Website
+                </h3>
+                <h3>
+                  Code:  "very delish Quebec food"
+                </h3>
+              </div>	
+            </div>
+          </div>
 
-            <script>
-              
-              // Get the modal
-              var modal{{ author.short_name }} = document.getElementById("team - {{ author.short_name }}");
-              
-              var contento{{ author.short_name }} = document.getElementsByClassName("image-content");
+          <script>
+            
+            // Get the modal
+            var modal{{ author.short_name }} = document.getElementById("team - {{ author.short_name }}");
+            
+            const contento{{ author.short_name }} = document.getElementsByClassName("image-content");
 
-              // Get the button that opens the modal
-              var btn{{ author.short_name }} = document.getElementById("teamwork - {{ author.short_name }}");
-            
-              // Get the <span> element that closes the modal
-              var span{{ author.short_name }} = document.getElementsByClassName("close - {{ author.short_name }}")[0];
-            
-              // When the user clicks on the button, open the modal
-              btn{{ author.short_name }}.onclick = function() {
-                modal{{ author.short_name }}.style.display = "block";
-              }
-            
-              // When the user clicks on <span> (x), close the modal
-              span{{ author.short_name }}.onclick = function() {
+            // Get the button that opens the modal
+            var btn{{ author.short_name }} = document.getElementById("teamwork - {{ author.short_name }}");
+          
+            // Get the <span> element that closes the modal
+            var span{{ author.short_name }} = document.getElementsByClassName("close - {{ author.short_name }}")[0];
+          
+            // When the user clicks on the button, open the modal
+            btn{{ author.short_name }}.onclick = function() {
+              modal{{ author.short_name }}.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span{{ author.short_name }}.onclick = function() {
+              modal{{ author.short_name }}.style.display = "none";
+            }
+          
+            // When the user clicks anywhere outside of the modal, close it
+            window.addEventListener("click", function(event) {
+              if (event.target == modal{{ author.short_name }}) {
                 modal{{ author.short_name }}.style.display = "none";
               }
-            
-              // When the user clicks anywhere outside of the modal, close it
-              window.addEventListener("click", function(event) {
-                if (event.target == modal{{ author.short_name }}) {
-                  modal{{ author.short_name }}.style.display = "none";
-                }
-              });
-            
-            
-            </script>
+            });
+          
+          
+          </script>
+
+        </div>
 
       </div>
-
-      </div>
-      <h3>{{ author.position }}</h3>
-      <p>{{ author.content | markdownify }}</p>
+      <h3>
+        {{ author.name }}
+        <p>---</p>
+        {% if site.lang == "fr" %}
+          {{ author.position_fr }}
+          {% else %}
+          {{ author.position }}
+        {% endif %}
+      </h3>
     </li>
   {% endfor %}
 </ul>

@@ -1,7 +1,8 @@
 ---
 short_name: kimia
 name: Matrix2
-position: ["Robot", ", Programming"]
+position: Kiosk
+position_fr: Kiosque
 image_link: /assets/images/members/kimia.jpg
 ---
 {% tf authors/kimia.md %}
