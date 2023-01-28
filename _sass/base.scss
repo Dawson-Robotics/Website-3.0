@@ -60,6 +60,7 @@ nav a {
   transition: 0.5s;
   padding-left: 20px;
   padding-right: 20px;
+  color: var(--clr);
 }
 
 nav a:before {
@@ -67,6 +68,7 @@ nav a:before {
   position: absolute;
   inset: 2px;
   background: #27282c;
+  color: var(--clr);
 }
 
 nav a:hover {
