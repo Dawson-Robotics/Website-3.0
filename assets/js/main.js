@@ -15,7 +15,7 @@ function leave2(loc) {
 
     rain = document.getElementById("transition-in"); 
     rain.hidden = false;
-    rain.setAttribute("transition-style", "in:wipe:bottom-right");
+    rain.setAttribute("class", "--in-out");
 
 
         setTimeout(() => {
