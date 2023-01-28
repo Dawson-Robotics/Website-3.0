@@ -1,6 +1,6 @@
 <nav>
     {% for item in site.data.navigation-en %}
-      <a href="{{ site.baseurl }}{{ item.link }}" style="--clr:#78C475" {% if page.url == item.link %}class="current"{% endif %}>
+      <a class="navbutton" href="{{ site.baseurl }}{{ item.link }}" style="--clr:#78C475" {% if page.url == item.link %}class="current navbutton"{% endif %}>
         {{ item.name }}
       </a>
     {% endfor %}
