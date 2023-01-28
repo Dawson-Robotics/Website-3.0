@@ -1,0 +1,1 @@
+Determined to do absolutely nothing but play cards at the competition again

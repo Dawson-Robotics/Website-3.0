@@ -1,1 +1,1 @@
-hahaha kiosk go brr
+There is a madness to my methods.

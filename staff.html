@@ -31,6 +31,8 @@ permalink_fr: /equipe/
     display: none;
   }
 
+  
+
   /* On hover, picture has little bit see-through
   .slideshow-container:hover {
     opacity: 0.5;
@@ -60,7 +62,6 @@ permalink_fr: /equipe/
     overflow: inherit;
     border-radius: 5em;
     display: block;
-    animation: fadingIn 2s linear 0s 1;
   }
   
   @keyframes fadingIn {
@@ -82,13 +83,13 @@ permalink_fr: /equipe/
    border: solid purple 3px;
   }
 
- #info{
-  height: 40%;
-  width: 48%;
-  display: block;
-  border: solid cyan 3px;
-  float: left;
- }
+  #info{
+    height: 40%;
+    width: 48%;
+    display: block;
+    border: solid cyan 3px;
+    float: left;
+  }
 </style>
 
 {% if site.lang == "fr" %}
@@ -142,34 +143,23 @@ permalink_fr: /equipe/
             <div class="floatdown">
               <div id="wrapper">	
                 <header>
-                  <h1>
-                    Wanted
-                  </h1>
-                  <h2>
-                    Preferably alive
-                  </h2>
+                  <h1>Wanted</h1>
+                  <h2>Preferably alive</h2>
                 </header>
                 <section>
                   <img src="{{ site.baseurl }}{{ author.image_link }}">
                 </section>
                 <footer>	
-                  <h3>
-                    Reward: 42069 social credits in Dawtrix
-                  </h3>
+                  <h3>Reward: 42069 social credits in Dawtrix</h3>
                 </footer>
               </div>
               <div id="info">
-                <h2>
-                  Additional information
+                <h2>Additional information
                 </h2>
+                <h3>Name: {{ author.name }}</h3>
+                <h3>Participation: {{ author.position }}</h3>
                 <h3>
-                  Name: Poutine
-                </h3>
-                <h3>
-                  Participation: Website
-                </h3>
-                <h3>
-                  Code:  "very delish Quebec food"
+                  Code: {{ author.content | markdownify }}
                 </h3>
               </div>	
             </div>
