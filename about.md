@@ -40,7 +40,7 @@ permalink_fr: /a-propos/
         width: 100%;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 650px) {
         .real-map {
             width: 100%;
         }
