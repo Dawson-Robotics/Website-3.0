@@ -1,1 +1,1 @@
-I am a glitch in the matrix
+Squares are better
