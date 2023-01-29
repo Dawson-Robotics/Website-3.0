@@ -1,1 +1,1 @@
-Kyle ne sait pas quoi faire.
+Je ne sais pas quoi faire.
