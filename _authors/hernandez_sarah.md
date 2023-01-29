@@ -1,8 +1,8 @@
 ---
 short_name: sara
 name: Sara Hernandez
-position: Kiosk
-position_fr: Kiosque
+position: Robot
+position_fr: Robot
 image_link: /assets/images/members/sarah.jpg
 ---
 {% tf authors/sarah.md %}
