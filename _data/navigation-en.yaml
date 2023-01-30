@@ -1,13 +1,16 @@
-- name: Home
-  link: /home/
 - name: About
   link: /about-us/
+  pretext: To learn more about the
 - name: Robot
   link: /robot/
+  pretext: To witness the development of our team's
 - name: Journal
   link: /journal/
+  pretext: To peruse our recorded saga in
 - name: Team
   link: /staff/
+  pretext: To meet our
 - name: Media
   link: /media/
+  pretext: To watch our cinematic
 
