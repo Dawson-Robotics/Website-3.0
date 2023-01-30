@@ -140,7 +140,7 @@ function redirFr() {
             
     }, 100);
     
-    leave();
+    leave('fr');
 
 
 }
@@ -156,7 +156,7 @@ function leave(lang) {
             location.href='home';
         }, 1500);
     
-    else
+    if(lang = 'fr')
         setTimeout(() => {
             location.href='fr/acceuil';
         }, 1500);
