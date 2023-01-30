@@ -16,3 +16,8 @@ permalink_fr: /un-journal/
 
 {% tf pages/journal.md %}
 
+<div>
+    {% for post in site.posts %}
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    {% endfor %}
+</div>
