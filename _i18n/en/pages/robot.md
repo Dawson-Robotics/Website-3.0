@@ -1,15 +1,14 @@
 
 # Robot
-
 Hello.
 
-I am Oracle.
+I am Rangu.
 
 My team is… busy with other things, so I will be introducing you to everything instead.
 
 ![Monkey Moments](..\assets\images\weSpinAroundAndAroundAndAround.gif "We love monkeys")
 
-I am the robot that the Dawson team is building for this year’s Avia competition. Nobody could tell you more about me in every facet other than, well, me. I was optimized to complete the various tasks that will appear during the Avia competition, namely: flipping blue and yellow hexagons that my teammates call “Game Pieces,” (GPs) onto the floor, showing the side that corresponds to my team’s color, placing these GPs into the multiple levels of the towers, and stacking them onto the “multiplier” triangle to get a 1.5x boost to my team’s “points”. I don't know what the purpose of the points are, but it is my only goal to get as many points as possible. My team seems to share this goal, so it must be something good. 
+I am the robot that the Dawson Robotics Team is building for this year’s Avia competition. Nobody can tell you more about myself in every facet other than, well… me. I am optimized to complete the various tasks that will appear during the Avia competition. Specifically, my role is to flip blue and yellow hexagons that my teammates call “Game Pieces” (GPs) to show the side that corresponds to my team’s color, placing these GPs into the multiple levels of the towers, and stacking them onto the “multiplier” triangle to get a 1.5x boost to my team’s “points”. I don't know what the purpose of the points are, but my only goal is to get as many of them as possible. My team seems to share this goal, so it must be something good.
 
 ![Base Plans](..\assets\images\base_plans.jpg "Robot base")
 
@@ -17,11 +16,13 @@ I am a *measurement* by *measurement* robot, and *measurement* tall. I was made 
 
 ![Base Model](..\assets\images\base_model.jpg "Robot model")
 
-My base frame is rectangular, with one square missing in the middle of the front. They say the shape is similar to an “H” with an extra bar at the bottom. My four wheels are inside the two vertical bars of the H, around the lower half of it. Each wheel gets one motor due to the weight, and all the motors lay near the square frame between the wheels. This square frame also supports my arms. The tops of the H support one BROWSE (temporary, for snowplows, the thing thats gonna get the gps towards the middle) each and one side of my flipping mechanism. 
+I am a 2.5ft by 2.5ft robot, and 3ft tall. I was made to not be overly “girthy” to avoid being unable to pass through doors in the physics department (or perhaps they meant bulky?). My mode of displacement is through the use of 4 special wheels, called “Mecanum wheels”. Thanks to the Mecanums, I can easily move in all four directions.
+
+My base frame is rectangular, with an opening at the front. My four wheels are within my frame; due to their weight, each wheel is connected to its own motor. The base frame also supports my arms, which are used to lift the GPs on the towers. A flipping mechanism (nicknamed Flipper, actual name is the Oracle) is situated at the front of my frame. This structure uses a horizontal beam that is inserted into the side of a GP, that is then rotated by a motor to flip the GP. The GPs will be funneled towards my Flipper with my ‘brows, which are long strips of metal slanted to slide the GP towards the center. Finally, on top of the opening is located the most crucial part of my body. My teammates might call it the circuit board stand, but I will refer to it as my “brain”. This vital structure has a battery and is attached to the CrcDuino, which connects to my core parts.
 
 ![MOUTH in action](..\assets\images\mouth.jpg "The MOUTH in action")
 
-A lot like humans, I also have a MOUTH, only mine stands for Moving Objects Upward Towards Heaven. It uses a double reverse four bar mechanism in order to lift the GPs into the air. Attached to the end of my MOUTH is my TEETH (Turning Each Element Through Hands). This part of me grabs the GPs with claws, enabling me to secure the GPs and turning gears in the rear will flip them to the color that I want them to be. The process will thus be, I grab the GP with my TEETH, I lift it with my MOUTH while turning my TEETH to flip the GP if need be, then at the appropriate level I will advance and let go of the GP inside of the tower. I will also be stacking the multiplier tower with my MOUTH and TEETH. 
+Similarly to humans, I also have a MOUTH, which stands for Moving Objects Upward Towards Heaven (note to self: find out about mouth usage for humans). My MOUTH uses a double reverse four bar mechanism in order to lift the GPs into the air. Attached to the end of my MOUTH is my TEETH (Turning Each Element Through Hands). This part of me grabs the GPs with claws, enabling me to secure the GPs and turning gears in the rear will flip them to the color that I want them to be. The process will thus be, I grab the GP with my TEETH, I lift it with my MOUTH while turning my TEETH to flip the GP if need be, then at the appropriate level, I will advance and let go of the GP inside of the tower. I will also be stacking the multiplier tower with my MOUTH and TEETH. 
 
 <!--<img src="..\assets\images\flippy1.jpg" width="45%">-->
 <video width="45%" controls>
@@ -30,5 +31,4 @@ A lot like humans, I also have a MOUTH, only mine stands for Moving Objects Upwa
     Your browser does not support the video tag.
 </video>
 
-My flipping mechanism is UNNAMED (acronym when?). This part is composed of one bar and two motors rotating simultaneously. My bar fits almost perfectly into the gap between the yellow and blue side of the GP, and the two motors provide enough force to overcome the weight of the GP and flip it into the gap between the top of the H. My team actually modified the base just to make an area to flip the GP into. My bar and motors are also set up in a way that they can slide along a vertical axis if the need to adjust its distance to the floor comes up.
-
+Moving on to my Flipper. This part is composed of one thinner extrusion rotated by a single motor on my right side, while the left side is on a free rotating axle. My bar fits almost perfectly into the gap between the yellow and blue side of the GP, and my motor provides enough force to overcome the weight of the GP and flip it into the gap between the tops of the H. My team actually modified my base just to clear out an area to flip the GP into. My Oracle and motor are mounted on extrusion bars that allow them to slide along a vertical axis if adjustment is needed for the distance between the mechanism and the floor.
