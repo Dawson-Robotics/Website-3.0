@@ -1,8 +1,8 @@
 ---
 short_name: chuyi
-name: Matrix1
-position: Unknown
-position_fr: Unknown
+name: Chuyi Zhang
+position: ["Robot", ", Photographer"]
+position_fr: ["Robot", ", Photographe"]
 image_link: /assets/images/members/chuyi.jpg
 ---
 {% tf authors/chuyi.md %}

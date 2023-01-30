@@ -5,15 +5,15 @@
 
 <body>
     
+<canvas id="canvas"></canvas>
 
-<!-- <script src="{{ '/assets/js/matrixrain.js' | relative_url }}"></script> -->
-<!-- <script defer src="{{ '/assets/js/rain.js' | relative_url }}"></script> -->
+<script src="{{ '/assets/js/matrixrain.js' | relative_url }}"></script> 
+<script defer src="{{ '/assets/js/rain.js' | relative_url }}"></script> 
 <style>
 
     body {
-
-    margin: 0;
-    text-align: center  ;
+        margin: 0;
+        text-align: center  ;
     }
 
     div#picker {
@@ -22,7 +22,11 @@
         flex-direction: column;
         justify-items: center;
         justify-content: center;
+        align-items: center;
+        margin: 0;
+        text-align: center;
     }
+
 
     
 </style>
@@ -34,7 +38,7 @@
 <link rel="stylesheet" href="https://unpkg.com/transition-style">
 
     <div id="transition-in" hidden>
-        <h1>Hello World</h1>
+        <img src="{{ '/assets/images/Dawtrix.png' | relative_url }}" alt="">
     </div>
 
 </body>

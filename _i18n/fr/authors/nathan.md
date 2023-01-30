@@ -1,0 +1,1 @@
+Déterminé à ne rien faire d'autre que de jouer aux cartes lors de la compétition

@@ -1,16 +1,17 @@
+
 <nav>
-
-    <a href="../acceuil" class="logo"> <img src="../assets/images/dawtrix_logo2.png" alt="logo"/> </a>
-    {% for item in site.data.navigation-fr %}
-      <a href="{{ site.baseurl }}{{ item.link }}" {% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
-    {% endfor %}
-
-    {% for lang in site.languageNames %}
-      {% if lang[0] == site.lang %} {% continue %} {% endif %}
-      {% if page.namespace %}
-        <a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a>
-        {% else %}
-        <a href="{{ site.baseurl_root }}">{{ lang[1] }}</a>
-      {% endif %}
-    {% endfor %}
+  {% for item in site.data.navigation-fr %}
+    <a class="navbutton" href="{{ site.baseurl }}{{ item.link }}" style="--clr:#78C475" {% if page.url == item.link %}class="current navbutton"{% endif %}>
+      {{ item.name }}
+    </a>
+  {% endfor %}
+  
+  {% for lang in site.languageNames %}
+    {% if lang[0] == site.lang %} {% continue %} {% endif %}
+    {% if page.namespace %}
+      <a class="navbutton"  style="--clr:#78C475" href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a>
+      {% else %}
+      <a class="navbutton" style="--clr:#78C475" href="{{ site.baseurl }}">{{ lang[1] }}</a>
+    {% endif %}
+  {% endfor %}
 </nav>

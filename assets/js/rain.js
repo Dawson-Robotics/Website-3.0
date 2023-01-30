@@ -16,7 +16,7 @@ const matrixRain = new MatrixRain(
     green = 255, 
     blue = 0,
     randomColors = false,
-    flowRate = 1,
+    flowRate = 0.2,
     fps = 10
 );
 

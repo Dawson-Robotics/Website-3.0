@@ -1,7 +1,9 @@
+
+# Robot
+
 *FR* 
 
 Hello.
-
 I am Oracle.
 
 My team is… busy with other things, so I will be introducing you to everything instead.

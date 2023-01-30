@@ -1,5 +1,5 @@
 ---
-short_name: sarah
+short_name: sara
 name: Sara Hernandez
 position: Robot
 position_fr: Robot

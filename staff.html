@@ -7,35 +7,9 @@ permalink_fr: /equipe/
 ---
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
   * {box-sizing:border-box}
-
-  /* Slideshow container */
-  .slideinfo {
-    opacity: 0;
-    text-align: center;
-  }
-
-  .slideinfo:hover {
-    color: white;
-    text-align: center;
-    opacity: 1;
-  }
-
-  .teaminfo-container {
-    max-width: 850px;
-    margin: auto;
-  }
-
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-
-  /* On hover, picture has little bit see-through
-  .slideshow-container:hover {
-    opacity: 0.5;
-  } 
-  */
 
   /* Fading animation */
   .fade {
@@ -49,18 +23,19 @@ permalink_fr: /equipe/
   }
 
   .image-content {
-    {% if site.lang == "fr" %}
-      background-color: blue;
-      {% else %}
-      background-color: red;
-    {% endif %}
     margin: 1.5em auto; /* 15% from the top and centered */
-    padding: 1em;
-    width: 70%; /* Could be more or less, depending on screen size */
+    {% if site.lang == "fr" %}
+        background: blue;
+        background: linear-gradient(to right, blue 52%, lightblue 52%);
+        {% else %}
+        background: red;
+        background: linear-gradient(to right, red 52%, pink 52%);
+    {% endif %}
+    padding: 2em;
+    width: 80%; /* Could be more or less, depending on screen size */
     overflow: inherit;
-    border-radius: 5em;
+    border-radius: 2.5em;
     display: block;
-    animation: fadingIn 2s linear 0s 1;
   }
   
   @keyframes fadingIn {
@@ -71,35 +46,75 @@ permalink_fr: /equipe/
   .image-content img {
       padding: 1em;
       border-radius: 4em;
-      max-width: 75%;
+      max-width: 60%;
+  }
+
+  .image-content p {
+    width: 100%;
+    {% if site.lang == "fr" %}
+        color: blue;
+        {% else %}
+        color: red;
+    {% endif %}
   }
 
   #wrapper{
-   height: 90%;
-   width: 48%;
-   display: block;
-   float: left;
-   border: solid purple 3px;
+    width: 48%;
+    display: block;
+    float: left;
+    text-align: center;
+    background-color: black;
   }
 
- #info{
-  height: 40%;
-  width: 48%;
-  display: block;
-  border: solid cyan 3px;
-  float: left;
- }
+  #info{
+    width: 40%;
+    display: block;
+    float: right;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    .image-content {
+      {% if site.lang == "fr" %}
+        background: blue;
+        background: linear-gradient(to top, lightblue 52%, blue 48%);
+        {% else %}
+        background: red;
+        background: linear-gradient(to top, pink 52%, red 48%);
+      {% endif %}
+    }  
+    
+    #wrapper{
+      padding: 0.2em;
+      width: 100%;
+      display: block;
+      margin: 0.2em auto 0.2em 0.2em;
+      float: none;
+      text-align: center;
+      background-color: black;
+    }
+
+    #info{
+      width: 100%;
+      display: block;
+      float: none;
+      margin: auto auto auto auto;
+      text-align: center;
+    }
+    
+  }
 </style>
 
+<br>
 {% if site.lang == "fr" %}
-  <h1>Nos membres d'équipe dédié:</h1>
+  <h1 style="text-align:center">Nos membres d'équipe dédiés:</h1>
   {% else %}
-  <h1>Our dedicated team members:</h1>
+  <h1 style="text-align:center">Our dedicated team members:</h1>
 {% endif %}
 
-<ul class="staff">
+<ul class="staff" style="padding: 0em;">
   {% for author in site.authors %}
-    <li>
+    <li style="margin: 1em auto 1em auto">
 
       <svg class="filter">
         <filter id="alphaRed">
@@ -134,46 +149,38 @@ permalink_fr: /equipe/
       <div class="teaminfo-container">
 
         <!-- The Modal -->
-        <div id="team - {{ author.short_name }}" class="post">
-            
+        <div id="team - {{ author.short_name }}" class="post">            
           <!-- Modal content -->
           <div id="teaming - {{ author.short_name }}" class="image-content">
-            <span class="close - {{ author.short_name }}">&times;</span>
-            <div class="floatdown">
+            <span class="close - {{ author.short_name }}" style="display:block">&times</span>  
+            <div class="image-description">
               <div id="wrapper">	
                 <header>
-                  <h1>
-                    Wanted
-                  </h1>
-                  <h2>
-                    Preferably alive
-                  </h2>
+                  <h1 style="width:100%; font-family:'Roboto Mono', monospace; letter-spacing: 0.2em;">WANTED</h1>
+                  <h2 style="width:100%; font-family:'Roboto Mono', monospace; letter-spacing: 0.2em;">PREFERABLY ALIVE</h2>
                 </header>
                 <section>
-                  <img src="{{ author.image_link }}">
+                  <img src="{{ site.baseurl }}{{ author.image_link }}">
                 </section>
                 <footer>	
-                  <h3>
-                    Reward: 42069 social credits in Dawtrix
-                  </h3>
+                  <h3 style="width:100%; letter-spacing:0.2em;">REWARD: 420 SOCIAL CREDITS IN DAWTRIX</h3>
                 </footer>
               </div>
               <div id="info">
-                <h2>
-                  Additional information
-                </h2>
-                <h3>
-                  Name: Poutine
-                </h3>
-                <h3>
-                  Participation: Website
-                </h3>
-                <h3>
-                  Code:  "very delish Quebec food"
-                </h3>
+                <h3 style="width:100%; font-family:'Roboto Mono', monospace; 
+                {% if site.lang == "fr" %}color: blue;{% else %}color: red;{% endif %}">{% if site.lang == "fr" %}INFORMATION ADDITIONELLE:{% else %}ADDITIONAL INFORMATION:{% endif %}</h3>
+                <h4 style="width:100%; font-family:'Roboto Mono', monospace;
+                {% if site.lang == "fr" %}color: blue;{% else %}color: red;{% endif %}">{% if site.lang == "fr" %}NOM:{% else %}NAME:{% endif %}{{ author.name | upcase }}</h4>
+                <h4 style="width:100%; font-family:'Roboto Mono', monospace;
+                {% if site.lang == "fr" %}color: blue;{% else %}color: red;{% endif %}">
+                  PARTICIPATION: {% if site.lang == "fr" %}{{ author.position_fr }}{% else %}{{ author.position }}{% endif %}
+                </h4>
+                <h4 style="width:100%; font-family:'Roboto Mono', monospace;
+                {% if site.lang == "fr" %}color: blue;{% else %}color: red;{% endif %}">CODE: {{ author.content | markdownify | upcase }}</h3>
               </div>	
             </div>
           </div>
+        
 
           <script>
             
@@ -211,9 +218,15 @@ permalink_fr: /equipe/
         </div>
 
       </div>
-      <h3>
+      <h3 style="text-align: center; margin: auto;">
         {{ author.name }}
-        <p>---</p>
+      </h3>
+      <br>
+      <p style="text-align: center; margin: auto;">
+        ---
+      </p>
+      <br>
+      <h3 style="text-align: center; margin: auto;">
         {% if site.lang == "fr" %}
           {{ author.position_fr }}
           {% else %}
