@@ -49,7 +49,7 @@ This year, Avia returns to the classic 2 versus 2 competitive format. This year,
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 <!-- Use it like any other HTML element -->
-<model-viewer class="field_model" alt="Avia 2023 Game Field" src="../assets/field/game_field.glb" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+<model-viewer alt="Avia 2023 Game Field" src="../assets/field/game_field.glb" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
 
 <!--ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" -->
 

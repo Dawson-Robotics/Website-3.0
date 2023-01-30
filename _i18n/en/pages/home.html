@@ -2,15 +2,54 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <style>
+
+      @keyframes wipe-in {
+        from {
+          clip-path: var(--wipe-bottom-right-in);
+        }
+        to {
+          clip-path: var(--wipe-bottom-right-out);
+        }
+      }
+  
+      @keyframes wipe-out {
+        from {
+          clip-path: var(--wipe-top-left-out);
+        }
+        to {
+          clip-path: var(--wipe-bottom-right-in);
+        }
+      }
+  
+      .--in-wipe {
+        --transition__duration: 1s;
+        --transition__easing:  cubic-bezier(.25, 1, .30, 1);
+        animation-name: wipe-in;
+      }
+  
+      .--in-out {
+        --transition__duration: 1s;
+        --transition__easing:  cubic-bezier(.25, 1, .30, 1);
+        animation-name: wipe-out;
+      }
+      
+    </style>
   </head>
   <body>
-    <h1> Welcome to Dawson Robotics</h1>
-    <a href="../assets/images/fish_en.png">Last year's website here... I KNOW YOU WANT TO CLICK IT :)</a>
-    <br>
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <div id="transition" transition-style class="--in-wipe">
+  
+    </div>
+      <div id="transition-in" transition-style hidden>  
+    </div>
+
+    <div class="main-container">
+      {% include homepageslides.html %}
     
-    {% include home_selection.html %}
-    
-    {% include homepageslides.html %}
+      {% include home_selection.html %}
+    </div>
+
 
   </body>
 </html>

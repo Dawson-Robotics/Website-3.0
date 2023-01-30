@@ -2,18 +2,54 @@
 
 {% include head.html %}
 
+<style>
+
+  html {
+    background-image: url("../assets/images/DAWSONRAINPNG.png");
+    z-index: -1;
+    background-repeat: repeat;
+  }
+
+  @keyframes wipe-in {
+    from {
+      clip-path: var(--wipe-bottom-right-in);
+    }
+    to {
+      clip-path: var(--wipe-bottom-right-out);
+    }
+  }
+
+  @keyframes wipe-out {
+    from {
+      clip-path: var(--wipe-top-left-out);
+    }
+    to {
+      clip-path: var(--wipe-bottom-right-in);
+    }
+  }
+
+  .--in-wipe {
+    --transition__duration: 1s;
+    --transition__easing:  cubic-bezier(.25, 1, .30, 1);
+    animation-name: wipe-in;
+  }
+
+  .--in-out {
+    --transition__duration: 1s;
+    --transition__easing:  cubic-bezier(.25, 1, .30, 1);
+    animation-name: wipe-out;
+  }
+</style>
+
 <body>
 
   <link rel="stylesheet" href="https://unpkg.com/transition-style">
 
+  <div id="transition" transition-style="out:wipe:bottom-right"></div>
 
-  <div id="transition" transition-style="out:wipe:bottom-right">
-    <h1>Hello World</h1>
-  </div>
+  <div id="transition-in" transition-style hidden></div>
 
-  
-
-  <div class="wrapper">
+  <div class="wrapper-home">
     {{ content }}
   </div>
     

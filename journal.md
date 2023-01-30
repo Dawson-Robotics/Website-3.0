@@ -5,6 +5,7 @@ namespace: journaling
 permalink: /journal/
 permalink_fr: /un-journal/
 ---
+<!--
 <style>
     img {
         border-radius: 1em;
@@ -13,6 +14,12 @@ permalink_fr: /un-journal/
         display: block;
     }
 </style>
+-->
 
 {% tf pages/journal.md %}
 
+<div>
+    {% for post in site.posts %}
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    {% endfor %}
+</div>

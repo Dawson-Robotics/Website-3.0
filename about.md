@@ -9,11 +9,6 @@ permalink_fr: /a-propos/
 
 <style>
 
-    a img:hover {
-        background-color: #78C475;
-        border-radius: 2em;
-    }
-
     .maps {
         background-color: #78C475;
         padding: 1.5em;
@@ -49,6 +44,19 @@ permalink_fr: /a-propos/
             width: 100%;
         }
     }
+    
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+  
+    }
+
+    model-viewer {
+        width: 75vw;
+        height: 50vh;
+        border: dotted 2px;
+    }
+
 </style>
 
 {% tf pages/about.md %}

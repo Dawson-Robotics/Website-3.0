@@ -20,6 +20,7 @@ const matrixRain = new MatrixRain(
     fps = 10
 );
 
+
 matrixRain.run();
 matrixRain.setCanvasDimensions(window.innerWidth, window.innerHeight);
 

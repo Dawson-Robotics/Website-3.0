@@ -8,7 +8,7 @@ I am Oracle.
 
 My team is… busy with other things, so I will be introducing you to everything instead.
 
-![Monkey Moments](../assets/images/monke/monke1.jpg "We love monkeys")
+![Monkey Moments](..\assets\images\weSpinAroundAndAroundAndAround.gif "We love monkeys")
 
 I am the robot that the Dawson team is building for this year’s Avia competition. Nobody could tell you more about me in every facet other than, well, me. I was optimized to complete the various tasks that will appear during the Avia competition, namely: flipping blue and yellow hexagons that my teammates call “Game Pieces,” (GPs) onto the floor, showing the side that corresponds to my team’s color, placing these GPs into the multiple levels of the towers, and stacking them onto the “multiplier” triangle to get a 1.5x boost to my team’s “points”. I don't know what the purpose of the points are, but it is my only goal to get as many points as possible. My team seems to share this goal, so it must be something good. 
 

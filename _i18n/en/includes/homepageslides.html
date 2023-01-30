@@ -1,132 +1,89 @@
 <br>
 
 <style>
-  * {box-sizing:border-box}
+    * {box-sizing:border-box}
 
-  /* Slideshow container */
-  .slideinfo {
-    opacity: 0;
-    text-align: center;
-  }
+    /* Slideshow container */
+    .slideinfo {
+        opacity: 0;
+        text-align: center;
+    }
 
-  .slideinfo:hover {
-    color: white;
-    text-align: center;
-    opacity: 1;
-  }
+    .slideinfo:hover {
+        color: white;
+        text-align: center;
+        opacity: 1;
+    }
 
-  .slideshow-container {
-    max-width: 850px;
-    margin: auto;
-  }
+    .slideshow-container {
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
+    .wrapper {
+      width: 100%;
+    }
 
-  /* On hover, picture has little bit see-through
-  .slideshow-container:hover {
-    opacity: 0.5;
-  } 
-  */
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
 
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
+    /* On hover, picture has little bit see-through */
+    .slideshow-container:hover {
+        opacity: 0.5;
+    }
 
-  @keyframes fade {
-    from {opacity: .1}
-    to {opacity: 1}
-  }
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
 
-  .image-content {
-    background-color: #fefefe;
-    margin: 10% auto; /* 15% from the top and centered */
-    padding: 10px;
-    width: 95%; /* Could be more or less, depending on screen size */
-  }
-
+    @keyframes fade {
+        from {opacity: .1}
+        to {opacity: 1}
+    }
 </style>
 
 <!-- Slideshow container -->
 <div class="slideshow-container">
+  <h1> Welcome to Dawson Robotics</h1>
+  <a href="../assets/images/fish_en.png">Last year's website here... I KNOW YOU WANT TO CLICK IT :)</a>
+  <br>
 
   <!-- Full-width images with number and caption text -->
   {% for image in site.static_files %}
-    {% if image.path contains 'assets/images/home_page_slides' %}
-      
-      <!-- The Modal -->
-      <div id="posting - {{ image.basename }}" class="post">
-          
-        <!-- Modal content -->
-        <div class="post-content">
-          <span class="close - {{ image.basename }}">&times;</span>
-          <img src=" {{ image.path | absolute_url }} " style="width:90%">
-        </div>
-
-      </div>
-
+    {% if image.path contains '/assets/images/home_page_slides' %}
       <div class="mySlides fade">
-        
-        <!-- Trigger/Open The Modal -->
-        <a id="posty - {{ image.basename }}">
-          <img src=" {{ image.path | absolute_url }} " style="width:50%">
+        <a href="{{ image.path | absolute_url }}">
+          <div class="slideinfo"> 
+            <p>{{ image.modified_time | remove: "-0400" }}</p>
+          </div>
+          <img src=" {{ image.path | absolute_url }} " style="width:100%">
         </a>
-
       </div>
-
-      <script>
-        
-        // Get the modal
-        var modal{{ image.basename }} = document.getElementById("posting - {{ image.basename }}");
-      
-        // Get the button that opens the modal
-        var btn{{ image.basename }} = document.getElementById("posty - {{ image.basename }}");
-      
-        // Get the <span> element that closes the modal
-        var span{{ image.basename }} = document.getElementsByClassName("close - {{ image.basename }}")[0];
-      
-        // When the user clicks on the button, open the modal
-        btn{{ image.basename }}.onclick = function() {
-          modal{{ image.basename }}.style.display = "block";
-        }
-      
-        // When the user clicks on <span> (x), close the modal
-        span{{ image.basename }}.onclick = function() {
-          modal{{ image.basename }}.style.display = "none";
-        }
-      
-        // When the user clicks anywhere outside of the modal, close it
-        window.addEventListener("click", function(event) {
-          if (event.target == modal{{ image.basename }}) {
-            modal{{ image.basename }}.style.display = "none";
-          }
-        });
-      
-      
-      </script>
-
     {% endif %}
   {% endfor %}
 
 </div>
 <script>
-  let slideIndex = 0;
-  showSlides();
+    let slideIndex = 0;
+    showSlides();
 
-  function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
-      slides[slideIndex-1].style.display = "block";
-      setTimeout(showSlides, 2000); // Change image every 4 seconds
-      }
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+        
 </script>
 <br>
