@@ -2,6 +2,7 @@
   .wrapper {
     border-right: none;
     border-left: none;
+    border-top: none;
   }
 
   .main-container {
@@ -10,31 +11,28 @@
   }
 
   .home-nav-text {
-    width: 100%;
+    width: 20%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 10px;
-    margin-top: 5%;
-    margin-bottom: auto;
+    padding: 0.5em;
+    background-color: black;
     justify-content: space-evenly;
-    margin-left: 15%;
   }
 
   .home-nav-text p {
-    margin-top: 35%;
+    margin-top: 25%;
+    margin-bottom: 15%;
     max-height: 120px;
   }
 
   .home-nav {
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: column;
     padding: 10px;
-    margin-top: 5%;
     margin-bottom: auto;
   }
 
@@ -46,12 +44,12 @@
     background-color: #6ce867;
     color: black;
     max-height: fit-content;
-    padding: 3em;
+    padding: 2em;
     border-radius: 2em;
     display: inline;
     font-family: 'Montserrat', sans-serif;
     position: relative;
-    margin: 10px;
+    margin: 1em;
     max-height: 120px;
     max-width: 250px;
     text-decoration: none;
@@ -59,20 +57,20 @@
   }
 
   .home-nav a:hover {
-    background-color: red;
+    background-color: blue;
     color: white;
   }
 </style>
 
 <div class="home-nav-text">
-  {% for item in site.data.navigation-fr offset: 1 %}
+  {% for item in site.data.navigation-fr %}
     <p>{{ item.pretext }}</p>
   {% endfor %}
 </div>
 
 <div class="home-nav">
-    {% for item in site.data.navigation-fr offset: 1 %}
-      <a href="{{ site.baseurl }}{{ item.link }}">{{ item.name }}</a> 
+    {% for item in site.data.navigation-fr %}
+      <a class="navbutton" href="{{ site.baseurl }}{{ item.link }}">{{ item.name }}</a> 
     {% endfor %}
 </div>
 

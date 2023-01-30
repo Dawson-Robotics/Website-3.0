@@ -15,9 +15,8 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 10px;
-    margin-top: 5%;
-    margin-bottom: auto;
+    padding: 0.5em;
+    margin-top: 2%;
     justify-content: space-evenly;
     margin-left: 15%;
   }
@@ -46,7 +45,7 @@
     background-color: #6ce867;
     color: black;
     max-height: fit-content;
-    padding: 3em;
+    padding: 2.5em;
     border-radius: 2em;
     display: inline;
     font-family: 'Montserrat', sans-serif;
@@ -59,20 +58,25 @@
   }
 
   .home-nav a:hover {
-    background-color: red;
-    color: white;
+    {% if site.lang == "fr" %}
+        background-color: blue;
+        color: white;
+        {% else %}
+        background-color: blue;
+        color: white;
+    {% endif %}
   }
 </style>
 
 <div class="home-nav-text">
-  {% for item in site.data.navigation-en offset: 1 %}
+  {% for item in site.data.navigation-en %}
     <p>{{ item.pretext }}</p>
   {% endfor %}
 </div>
 
 <div class="home-nav">
-    {% for item in site.data.navigation-en offset: 1 %}
-      <a href="{{ site.baseurl }}{{ item.link }}">{{ item.name }}</a> 
-    {% endfor %}
+  {% for item in site.data.navigation-en %}
+    <a class="navbutton" href="{{ site.baseurl }}{{ item.link }}">{{ item.name }}</a> 
+  {% endfor %}
 </div>
 
