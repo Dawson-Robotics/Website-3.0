@@ -49,6 +49,12 @@ permalink_fr: /a-propos/
             width: 100%;
         }
     }
+    
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+  
+    }
 </style>
 
 {% tf pages/about.md %}
