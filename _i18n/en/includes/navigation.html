@@ -3,7 +3,7 @@
   <a href="{{ site.baseurl }}/home" class="logo">
     <img src="../assets/images/dawtrix_logo2.png" alt="logo"/>
   </a>
-  {% for item in site.data.navigation-fr %}
+  {% for item in site.data.navigation-en %}
     <a class="navbutton" href="{{ site.baseurl }}{{ item.link }}" style="--clr:#78C475" {% if page.url == item.link %}class="current navbutton"{% endif %}>
       {{ item.name }}
     </a>
