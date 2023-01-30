@@ -7,7 +7,7 @@ Depuis 2001, la compétition canadienne de robotique (CRC) rassemble les écoles
 
 [![Robotiques CRC](..\assets\images\CRClogo.png "CRC Robotics")](https://robo-crc.ca/about/)
 
-#### Avia Location
+#### Location de la compétition Avia
 
 Comme durant l'année dernière, la compétition Avia aura lieu à l'école secondaire Curé-Antoine Labelle, située à Laval.
 
@@ -29,19 +29,19 @@ Comme durant l'année dernière, la compétition Avia aura lieu à l'école seco
 
 [![Avia 2023 Competition Logo](..\assets\images\AviaOfficialLogo.png "Avia 2023 Logo")](https://robo-crc.ca/avia-2023/)
 
-### Game Rules
+### Règles du jeu
 
-This year, Avia returns to the classic 2 versus 2 competitive format. This year, the two teams are labeled as the Blue Team and the Yellow Team. The goal, as always, is to be the team with the most points. Each team can obtain points by flipping the hexagonal game pieces to their respective team colour. Depending on where the game piece is placed, it will garner the team a different amount of points. Each level on the towers gives a different number of points. The following point system below shows the amount of points given to a team for each level on the towers and the ground/playing field floor:
+Cette année, Avia reprend la forme classique du 2 contre 2. Les côtés sont respectivement l'équipe bleue contre l'équipe jaune. Le but est d’avoir plus de points que l’équipe adverse à la fin de la partie. L’obtention des points se fait en retournant les pièces de forme hexagonale ayant la couleur de l’équipe. Le nombre de points attribués dépend directement de l’emplacement de la pièce, où plus précisément, de l'étage sur laquelle elle est située. Chaque niveau des différentes tours contient un nombre de points différent. La liste de points ci-dessous illustre le nombre de points accordés par équipe selon l'étage.
 
 <ul>
-<li> Level 0 (Ground): 35 points </li>
-<li>Level 1: 10 points </li>
-<li>Level 2: 20 points </li>
-<li>Level 3: 40 points </li>
-<li>Level 4: 80 points </li>
-<li>Level 5: 160 points </li>
-<li>Level 6: 320 points </li>
-<li>Level 7 (only found on the middle tower): 640 points </li>
+<li>Niveau 0 (terrain): 35 points </li>
+<li>Niveau 1: 10 points </li>
+<li>Niveau 2: 20 points </li>
+<li>Niveau 3: 40 points </li>
+<li>Niveau 4: 80 points </li>
+<li>Niveau 5: 160 points </li>
+<li>Niveau 6: 320 points </li>
+<li>Niveau 7 (seulement dans la tour milieu): 640 points </li>
 </ul>
 
 
@@ -53,6 +53,6 @@ This year, Avia returns to the classic 2 versus 2 competitive format. This year,
 
 <!--ar environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" -->
 
-There are 59 normal game pieces (GPs) and one red game piece that are all scattered on the playing field. The red GP, when placed in a tower, nullifies all the points scored on the levels below it.
+Il y a 59 pièces normales et une pièce rouge sur le terrain de jeu. Lorsque celle-ci est placée dans une tour, tous les points obtenus par les pièces situées dans les étages en dessous seront annulés. 
 
-Sandwiched between the two starting points of the same team is the Multiplier. The Multiplier zone contains a triangular stand to stack GPs on. The team with the highest stack (with no outside help) gets their points multiplied by 1.5x. In the situation where both teams' towers have the same height (difference of 1/8 inches maximum), each team gets a x1.25 boost.
+Entre les deux zones de départ de la même équipe, il y en a une troisième avec un piédestal pour empiler les pièces. Il s’agit de la zone multiplicatrice. Le score de l'équipe avec la pile la plus haute (sans aide externe) sera multiplié par x1,5. S’il arrivait que les deux équipes aient des piles de la même hauteur, les deux pointages seraient alors multipliés par x1,25.
