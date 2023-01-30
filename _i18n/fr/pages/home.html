@@ -4,14 +4,13 @@
     <title>{{ page.title }}</title>
   </head>
   <body>
-    <h1> Bienvenue a "Dawson Robotics"</h1>
-    <h2> voici le lien de la video ;)</h2>
-    <a href="../assets/images/fish_en.png">Le site web de l'année dernière</a>
+    
     <br>
+    <div class="main-container">
+      {% include homepageslides.html %}
     
       {% include home_selection.html %}
-      
-      {% include homepageslides.html %}
+    </div>
 
   </body>
 </html>

@@ -1,13 +1,16 @@
-- name: Acceuil
-  link: /acceuil/
 - name: À propos
   link: /a-propos/
+  pretext: To learn more about the
 - name: Le robot
   link: /robot/
+  pretext: To witness the development of our team's
 - name: Le journal
   link: /un-journal/
+  pretext: To peruse our recorded saga in
 - name: Équipe
   link: /equipe/
+  pretext: To meet our
 - name: Média
   link: /media/
+  pretext: To watch our cinematic
 

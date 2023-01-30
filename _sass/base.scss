@@ -39,6 +39,27 @@
   /* transform: translate(50vw);  */
 }
 
+.logo {
+  border: none;
+  background-color: none;
+  width: 80%;
+  max-width: 1000px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.logo:hover {
+  background-color: none;
+  border: none;
+  box-shadow: none;
+  color: none;
+}
+
+.logo:before {
+  background-color: none;
+  border: none;
+}
+
 
 nav {
     max-width: 100%;
@@ -446,4 +467,8 @@ h2{
     opacity: 0.7;
     background-color: rgba(0,0,255,0.5);
   }
+}
+
+.class {
+  
 }
