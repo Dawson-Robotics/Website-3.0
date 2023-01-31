@@ -22,6 +22,7 @@ One of our first meetings had the goal to make a life changing decision: choosin
 At this point, we unknowingly sealed our fates: we were bound to be trapped in the Dawtrix. It was but a matter of time.
 
 After the theme was decided, the classroom of 7A2 (seventh floor) was generally divided as such for each team:
+
 - Robot had around half the class, the innermost part of it with one whiteboard and one electronic board. They also had another smaller room serving as a workshop and storage room. The suffocating temperature however, has dissuaded most of us from staying for prolonged periods of time, so we eventually moved most of our activities into the classroom.
 - Kiosk had a gathering closer to the door, second place in size. 
 - Sandwiched between those two giant teams was the video, website, and programming teams. Although they came in last in terms of size, they made up for it through the amount of noise that came out of the group while brainstorming.
@@ -64,7 +65,7 @@ Above all though, it was a night of laughter and unforgettable circumstances.
 <img src="../assets/images/post_pictures/journal/journal12.jpg" alt="climbing fence">
 <img src="../assets/images/post_pictures/journal/journal13.jpg" alt="three amigos">
 
-The following information is purely speculation
+## The following information is purely speculation
 
 We are unsure of the date at which the simulation started. The journal I've been keeping has a blank, so the writer is unsure of the timeline moving onward. All I know (personally) is that when we woke up, school had already started (there goes my course outline attendance...) and we only had a few days left to rush to complete the website and video. We also apologise if the timelines of the other categories are inaccurate, we’ve all been put through the grinder by the robot so none of our memories are accurate. We also apologise if there is anything glitchy or broken in the website, for the robot has done a lot of stuff without our knowledge... and we didn't have as much time to fix them all. 
 
@@ -75,6 +76,7 @@ Good evening, today is February, 2nd? Huh, that's odd... I remember it being Jan
 - The robot team is still working on fixing the double reverse 4 bar arm, they added a bunch of elastics and it seemed to be working better. 
 - We went through (again, because what else is there to do at this point?) the pictures of everyone dressed in black and with sunglasses. Needless to say, we look absolutely stunning. Currently we are also turning a few pictures from the documentation channel into emotes. 
 - The kiosk team is working on their LED lights, there’s an idea of using a Meta quest 2 VR headset. I don’t know what they’ll do but it sounds very cool. They seemed to always be the most organised of all of us & never to leave things for the last minute haha *looks away*. 
+
 Days until competition: 14 
 
 Hello again dairy, I haven't left to go buy milk yet, so today is February 9th. Last week, we made a lot of new progress:
