@@ -2,6 +2,58 @@
 
 {% include head.html %}
 
+<html>
+  
+  <body>
+
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+  
+    <div id="transition" transition-style="out:wipe:bottom-right"></div>
+  
+    <div id="transition-in" transition-style hidden></div>
+  
+  
+    <section class="main-content">
+  
+      <section class="left-section">
+    
+        <section class="logo-section">
+          
+          <div>
+            <img src="../assets/images/dawtrix_logo2.png">
+          </div>
+
+          <section class="main-mobile-nav">
+            {{ content }}
+          </section>
+    
+        </section>
+    
+        <section class="canvas-section">
+          
+          <section class="slidehome">
+            {% include homepageslides.html %}
+          </section>
+
+        </section>
+    
+      </section>
+    
+      <section class="right-section">
+        
+        {{ content }}
+    
+      </section>
+    
+    </section>
+    
+      
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  
+  </body>
+
+
+</html>
 <style>
 
   html {
@@ -41,20 +93,6 @@
   }
 </style>
 
-<body>
 
-  <link rel="stylesheet" href="https://unpkg.com/transition-style">
-
-  <div id="transition" transition-style="out:wipe:bottom-right"></div>
-
-  <div id="transition-in" transition-style hidden></div>
-
-  <div class="wrapper-home">
-    {{ content }}
-  </div>
-    
-  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
-
-</body>
 
 

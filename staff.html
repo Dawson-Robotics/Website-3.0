@@ -158,13 +158,13 @@ permalink_fr: /equipe/
               <div id="wrapper">	
                 <header>
                   <h1 style="width:100%; font-family:'Roboto Mono', monospace; letter-spacing: 0.2em;">WANTED</h1>
-                  <h2 style="width:100%; font-family:'Roboto Mono', monospace; letter-spacing: 0.2em;">PREFERABLY ALIVE</h2>
+                  <h2 class="wanted"  style="width:100%; font-family:'Roboto Mono', monospace; letter-spacing: 0.2em;">PREFERABLY ALIVE</h2>
                 </header>
                 <section>
                   <img src="{{ site.baseurl }}{{ author.image_link }}">
                 </section>
                 <footer>	
-                  <h3 style="width:100%; letter-spacing:0.2em;">REWARD: 420 SOCIAL CREDITS IN DAWTRIX</h3>
+                  <h3 class="credits" style="width:100%; letter-spacing:0.2em;">REWARD: 420 SOCIAL CREDITS IN DAWTRIX</h3>
                 </footer>
               </div>
               <div id="info">
@@ -237,3 +237,29 @@ permalink_fr: /equipe/
     </li>
   {% endfor %}
 </ul>
+
+<script>
+  function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+  }
+
+  let wanted = document.querySelectorAll(".wanted");
+  let credits = document.querySelectorAll(".credits");
+  wanted.forEach(element => {
+    let random = getRandomInt(2);
+    if (random === 1) {
+      element.innerHTML = "PREFERABLY ALIVE"
+    } else {
+      element.innerHTML = "PREFERABLY DEAD"
+    }
+  });
+
+  credits.forEach(element => {
+    let random = getRandomInt(420);
+    
+    element.innerHTML = `REWARD: ${random} SOCIAL CREDITS IN DAWTRIX`
+    
+  })
+
+  
+</script>
