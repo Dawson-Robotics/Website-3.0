@@ -1,3 +1,3 @@
-keep your friends close and your enemies dead
+hahaha website was finished at 10:39PM the day before 
 
-lmao xddd
+definetly did not stay up all night for this

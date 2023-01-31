@@ -106,7 +106,7 @@ function redirEng() {
             
     }, 100);
     
-    leave('en')
+    leave();
 
 }
 
@@ -140,27 +140,33 @@ function redirFr() {
             
     }, 100);
     
-    leave('fr');
+    leavefr();
 
 
 }
 
-function leave(lang) {
+function leave() {
     
     rain.hidden = false;
     rain.setAttribute("transition-style", "in:wipe:bottom-right");
 
 
-    if (lang ='en')
+
         setTimeout(() => {
             location.href='home';
         }, 1500);
     
-    if(lang = 'fr')
-        setTimeout(() => {
-            location.href='fr/acceuil';
-        }, 1500);
 
+
+}
+
+function leavefr() {
+    rain.hidden = false;
+    rain.setAttribute("transition-style", "in:wipe:bottom-right");
+
+    setTimeout(() => {
+        location.href='fr/acceuil';
+    }, 1500);
 }
 
 

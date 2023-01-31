@@ -1,1 +1,1 @@
-gardez vos amis proches et vos ennemis morts
+Je ne connais pas assez de francais pour traduire ma citation.

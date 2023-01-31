@@ -1,59 +1,62 @@
-<br>
-
 <style>
-    * {box-sizing:border-box}
+  /* Slideshow container */
+  .slideinfo {
+    opacity: 0;
+    text-align: center;
+  }
 
-    /* Slideshow container */
-    .slideinfo {
-        opacity: 0;
-        text-align: center;
+  .slideinfo:hover {
+    color: white;
+    text-align: center;
+    opacity: 1;
+  }
+
+  .slideshow-container {
+    margin: 30px;
+    display: flex;
+  }
+
+  .mySlides img {
+    max-height: 80%;
+    width: 100%;
+    max-width: 900px;
+    object-fit: cover;
+  }
+
+
+  .wrapper {
+    width: 100%;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* On hover, picture has little bit see-through */
+  .slideshow-container:hover {
+    opacity: 0.5;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .1
     }
 
-    .slideinfo:hover {
-        color: white;
-        text-align: center;
-        opacity: 1;
+    to {
+      opacity: 1
     }
-
-    .slideshow-container {
-      max-width: 500px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .wrapper {
-      width: 100%;
-    }
-
-    /* Hide the images by default */
-    .mySlides {
-        display: none;
-    }
-
-    /* On hover, picture has little bit see-through */
-    .slideshow-container:hover {
-        opacity: 0.5;
-    }
-
-    /* Fading animation */
-    .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    @keyframes fade {
-        from {opacity: .1}
-        to {opacity: 1}
-    }
+  }
 </style>
 
 <!-- Slideshow container -->
 <div class="slideshow-container">
-  <h1> Welcome to Dawson Robotics</h1>
-  <a href="../assets/images/fish_en.png">Last year's website here... I KNOW YOU WANT TO CLICK IT :)</a>
-  <br>
-
   <!-- Full-width images with number and caption text -->
   {% for image in site.static_files %}
     {% if image.path contains '/assets/images/home_page_slides' %}
@@ -86,4 +89,3 @@
         }
         
 </script>
-<br>
