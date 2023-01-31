@@ -1,6 +1,6 @@
 - name: À propos
   link: /a-propos/
-  pretext: Pour connaître le compétition CRC.
+  pretext: Pour connaître la compétition CRC.
 - name: Le robot
   link: /robot/
   pretext: Pour voir les développements sur
@@ -12,5 +12,5 @@
   pretext: Rencontrer notre
 - name: Média
   link: /media/
-  pretext: Pour regarder le cinématographique
+  pretext: Pour regarder la cinématographie du
 
